@@ -5,3 +5,7 @@ local/*
 zsh/.zcompdump*
 #Ignore zsh history
 zsh/.zhistory
+#Igmore vim plugins except Vundle
+vim/bundle/*
+!vim/bundle/Vundle.vim
+
