@@ -1,0 +1,7 @@
+#Ignore local settings
+*.local
+local/*
+#Ignore compiled autocomplete dump
+zsh/.zcompdump*
+#Ignore zsh history
+zsh/.zhistory
