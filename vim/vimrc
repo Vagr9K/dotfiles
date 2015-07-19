@@ -1,0 +1,134 @@
+set nocompatible "Disable compatibility
+
+"Package manager
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'gmarik/Vundle.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'mbbill/undotree'
+Plugin 'Raimondi/delimitMate'
+Plugin 'ervandew/supertab'
+Plugin 'tpope/vim-surround'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-commentary'
+Plugin 'kien/ctrlp.vim'
+Plugin 'bling/vim-airline'
+Plugin 'scrooloose/syntastic'
+Plugin 'davidhalter/jedi-vim'
+Plugin 'klen/python-mode'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'morhetz/gruvbox'
+Plugin 'sickill/vim-monokai'
+"Plugin 'vim-ruby/vim-ruby'
+"Plugin 'rust-lang/rust.vim'
+"Plugin 'phildawes/racer' "Depends on racer executable
+"Plugin 'Valloric/YouCompleteMe' "Clang dependencies
+"Plugin 'fatih/vim-go'
+
+call vundle#end()
+filetype plugin indent on
+"End of package manager config.
+
+"General config
+set number "Enable line numbers
+set cul "Enable current line highlighting
+hi CursorLine term=none cterm=none ctermbg=0 "Set line highlighting color
+set autochdir "Change directory to the current file's one
+set showcmd "Show last command
+set autoindent "Save last line intendation
+set mouse=a "Enable mouse in terminal
+set mousemodel=extend "Select only text, not line numbers.
+set backspace=indent,eol,start "Fix backspace in insert mode
+set hidden "Hidden buffer
+set showmatch "Match parenthesis
+set wildmenu "Better Vim autocomplete
+set list listchars=tab:\ \ ,trail:· "Show trailing spaces/tabs visually
+set nowrap "Don't wrap lines
+set linebreak "Wrap lines at convenient points
+
+"Folding settings
+set foldmethod=indent "Fold based on indent
+set foldnestmax=3 "Deepest fold is 3 levels
+set nofoldenable "Don't fold by default
+
+"Scrolling settings
+set scrolloff=8 "Start scrolling when we're 8 lines away from margins
+set sidescrolloff=15
+set sidescroll=1
+
+"Indent settings
+filetype plugin indent on
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set smarttab
+
+"Disable backup/swap
+set nobackup
+set noswapfile
+set nowb
+
+"Search settings
+set ignorecase
+set smartcase
+set incsearch
+set hlsearch
+
+"Default clipboard
+if has("win32") || has("win16")
+    set clipboard=unnamed
+else
+    set clipboard=unnamedplus
+endif
+
+"Fix arrow-key issues in screen/tmux session
+if &term =~ '^screen-256color'
+    " tmux will send xterm-style keys when its xterm-keys option is on
+    execute "set <xUp>=\e[1;*A"
+    execute "set <xDown>=\e[1;*B"
+    execute "set <xRight>=\e[1;*C"
+    execute "set <xLeft>=\e[1;*D"
+endif
+
+"Fix BCE problem under tmux
+if &term =~ '256color'
+    set t_ut=
+endif
+
+"Autoremove trailing whitespaces
+fun! <SID>StripTrailingWhitespaces()
+    let l = line(".")
+    let c = col(".")
+    %s/\s\+$//e
+    call cursor(l, c)
+endfun
+
+autocmd FileType * autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
+
+"Theme config
+set t_Co=16 "16-color mode
+syntax enable "Enable syntax highlighting
+set background=dark
+colorscheme solarized
+
+"AirLine settings
+""Remember to patch fonts!
+set laststatus=2
+set ttimeoutlen=50
+set encoding=utf-8
+let g:powerline_symbols = 'fancy'
+let g:airline_powerline_fonts=1
+set guifont=Droid\ Sans\ Mono\ Dotted\ for\ Powerline\ 9
+let g:airline_theme='powerlineish'
+let g:airline#extensions#tabline#enabled = 1
+
+"Keybinds
+set pastetoggle=<F2>
+map <C-n> :NERDTreeToggle<CR>
+nnoremap <F5> :UndotreeToggle<cr>
+map <F7> :tabp<CR>
+map <F8> :tabn<CR>
+map <F9> :PymodeLintToggle<CR>
