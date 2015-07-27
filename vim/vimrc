@@ -121,7 +121,7 @@ set ttimeoutlen=50
 set encoding=utf-8
 let g:powerline_symbols = 'fancy'
 let g:airline_powerline_fonts=1
-set guifont=Droid\ Sans\ Mono\ Dotted\ for\ Powerline\ 9
+set guifont=Source\ Code\ Pro\ 10
 let g:airline_theme='powerlineish'
 let g:airline#extensions#tabline#enabled = 1
 

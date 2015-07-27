@@ -1,3 +1,4 @@
 #!/usr/bin/env zsh
-./powerline.sh
+#./powerline.sh
+./sourcecodepro.sh
 
