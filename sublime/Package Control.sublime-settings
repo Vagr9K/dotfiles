@@ -1,0 +1,36 @@
+{
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Anaconda",
+		"AutoFileName",
+		"BracketHighlighter",
+		"Color Highlighter",
+		"ColorPicker",
+		"DocBlockr",
+		"EditorConfig",
+		"Emmet",
+		"GitGutter",
+		"JSHint Gutter",
+		"Markdown Preview",
+		"MarkdownEditing",
+		"Package Control",
+		"PackageResourceViewer",
+		"PHPUnit",
+		"Predawn",
+		"Predawn Monokai",
+		"SideBarEnhancements",
+		"SublimeCodeIntel",
+		"SublimeLinter",
+		"SublimeLinter-csslint",
+		"SublimeLinter-flake8",
+		"SublimeLinter-phpcs",
+		"SublimeREPL",
+		"Theme - Asphalt",
+		"Theme - Brogrammer",
+		"UnrealScriptIDE",
+		"Xdebug Client"
+	]
+}

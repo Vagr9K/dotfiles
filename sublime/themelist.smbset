@@ -1,0 +1,21 @@
+	//"theme": "predawn.sublime-theme",
+	//"theme" : "Numix Dark.sublime-theme",
+	//"theme" : "Asphalt-blue.sublime-theme"
+	//"theme" : "Asphalt-green.sublime-theme"
+	//"theme" : "Asphalt-monochrome.sublime-theme"
+	//"theme" : "Asphalt-orange.sublime-theme"
+	//"theme" : "Asphalt.sublime-theme"
+	//"theme" : "Brogrammer.sublime-theme"
+	//"theme" : "Flatland Dark.sublime-theme"
+	//"theme" : "Soda Dark.sublime-theme"
+	//"theme" : "Soda Dark 3.sublime-theme"
+	//"theme" : "itg.flat.dark.sublime-theme"
+	//"theme" : "itg.flat.dark.aqua.sublime-theme"
+	//"theme" : "itg.flat.dark.blue.sublime-theme"
+	//"theme" : "itg.flat.dark.green.sublime-theme"
+	//"theme" : "itg.flat.dark.orange.sublime-theme"
+	//"theme" : "itg.flat.dark.yellow.sublime-theme
+
+	"sidebar_small": true,
+	"tabs_small": true,
+	"findreplace_small": true,

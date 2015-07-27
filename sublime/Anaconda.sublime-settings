@@ -1,0 +1,26 @@
+/*
+    Anaconda user settings
+*/
+{
+    "anaconda_linting": true,
+    "anaconda_linting_behaviour": "load-save",
+    "anaconda_linter_delay": 0.5,
+    "anaconda_linter_persistent": false,
+    "anaconda_gutter_theme": "alpha",
+    "complete_parameters": true,
+    "complete_all_parameters": false,
+    "display_signatures": true,
+    /*
+        A list of pep8 error numbers to ignore.
+        The list of error codes is in this file: https://github.com/jcrocholl/pep8/blob/master/pep8.py.
+        Search for "Ennn:", where nnn is a 3-digit number.
+    */
+
+    "use_pylint": false,
+    "pep8_ignore":
+    [
+        "E501"
+    ],
+
+    
+}
