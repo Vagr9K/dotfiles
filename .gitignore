@@ -9,10 +9,6 @@ zsh/.zhistory
 vim/bundle/*
 !vim/bundle/Vundle.vim
 #Ignore sublime cache/logs/machine specific content.
-sublime/*.cache
-sublime/*.last-run
-sublime/*.user-ca-bundle
-sublime/*.merged-ca-bundle
-sublime/*.log
-sublime/Color\ Highlighter/ColorPicker*
-
+sublime/*
+!sublime/install.sh
+!sublime/*.sublime-settings

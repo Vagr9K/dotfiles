@@ -1,5 +1,5 @@
 {
-	"color_scheme": "Packages/User/SublimeLinter/Predawn Monokai (SL).tmTheme",
+	"color_scheme": "Packages/Predawn Monokai/Predawn Monokai.tmTheme",
 	"findreplace_small": true,
 	"font_size": 9,
 	"ignored_packages":
@@ -15,7 +15,9 @@
 		"MarkdownEditing",
 		"Markdown Preview",
 		"UserBAK",
-		"SublimeLinter-phpcs"
+		"SublimeLinter-phpcs",
+		"SublimeLinter",
+		"SublimeLinter-csslint"
 	],
 	"sidebar_small": true,
 	"tabs_small": true,
