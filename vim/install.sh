@@ -1,11 +1,7 @@
-#!/usr/bin/env sh
-BasePath="${DOTFILESPATH:=".dotfiles"}"
-LinkPath="$HOME/.vimrc"
-LinkSource="$HOME/$BasePath/vim/vimrc"
-VimPath="$HOME/$BasePath/vim"
-VimLink="$HOME/.vim"
-echo "Symlinking .vimrc to $LinkSource"
-ln -sf "$LinkSource" "$LinkPath"
+#!/usr/bin/env zsh
+printf "${Green}Insatlling Vim preferences.${Red}\n"
+printf "${Yellow}Symlinking .vimrc.${Red}\n"
+ln -s "$HOME/.dotfiles/vim/vimrc" "$HOME/.vimrc"
 
-echo "Symlinking $VimLink to $VimPath"
-ln -sf "$VimPath" "$VimLink"
+printf "${Yellow}Symlinking .vim folder.${Red}\n"
+ln -s "$HOME/.dotfiles/vim" "$HOME/.vim"

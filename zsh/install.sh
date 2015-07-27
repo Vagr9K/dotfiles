@@ -1,20 +1,20 @@
 #!/usr/bin/env zsh
-BasePath="${DOTFILESPATH:=".dotfiles/"}"
-ConfigFolder="$HOME/$BasePath/zsh"
+printf "${Green}Installing zsh preferences.\n"
+ConfigFolder="$HOME/.dotfiles/zsh"
 EnvPath="$ConfigFolder/.zshenv"
 EnvLink="$HOME/.zshenv"
 ModifyPath="$ConfigFolder/prezto_mods/modify.sh"
 #Update prezto
-echo "Updating prezto."
+printf "${Yellow}Updating prezto.${Yellow}\n"
 cd "$ConfigFolder/.zprezto/"
-git pull && git submodule update --init --recursive
+git pull origin master && git submodule update --init --recursive
 #Check if any prezto modifications exist and apply them
 if [ -e "$ModifyPath" ]
 then
-    echo "Applying modifications."
+    printf "${Yellow}Applying modifications.${Red}\n"
      ./"$ModifyPath"
 fi
 #Set custom zsh configuration directory
-echo "Symlinking .zshenv"
+printf "${Yellow}Symlinking .zshenv.${Red}\n"
 ln -sf "$EnvPath" "$EnvLink"
 

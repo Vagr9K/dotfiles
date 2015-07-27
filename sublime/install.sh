@@ -1,4 +1,4 @@
 #!/usr/bin/env zsh
-echo "Installing Sublime's preferences."
+printf "${Green}Installing Sublime's preferences.${Red}\n"
 ln -s ".dotfiles/sublime" "$HOME/.config/sublime-text-3/Packages/User"
 

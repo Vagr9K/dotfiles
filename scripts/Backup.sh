@@ -1,5 +1,4 @@
-#!/bin/bash
-GDriveDir="GDrive/"
+#!/usr/bin/env bash
 ForceCrypt=false
 ForceUpload=false
 Passwrd="ruben"

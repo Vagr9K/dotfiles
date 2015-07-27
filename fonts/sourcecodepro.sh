@@ -1,5 +1,4 @@
 #!/usr/bin/env zsh
-echo "Installing Source Code Pro fonts."
 jsondata=$(curl -s https://api.github.com/repos/adobe-fonts/source-code-pro/releases)
 releaselist=$(echo "$jsondata" | grep "prerelease")
 taglist=$(echo "$jsondata" | grep "tag_name")
@@ -16,9 +15,11 @@ do
 done
 tagid=$(echo "$taglist" | head -n "$relid" | cut -d '"' -f 4)
 link="https://github.com/adobe-fonts/source-code-pro/archive/$tagid.tar.gz"
-echo "Downloading from $link"
+printf "${Yellow}Downloading from $link.${Red}\n"
 tmpfolder=$(mktemp -d /tmp/dotfiles.sourcecodepro.XXXXXXXXX)
+printf "${Yellow}"
 curl -L "$link" > "$tmpfolder/download.tar.gz"
+printf "${Red}"
 mkdir "$tmpfolder/extract"
 tar -xf "$tmpfolder/download.tar.gz" -C "$tmpfolder/extract" --strip-components=1
 cp -a "$tmpfolder/extract/TTF/." "$HOME/.fonts"
