@@ -17,7 +17,8 @@
 		"UserBAK",
 		"SublimeLinter-phpcs",
 		"SublimeLinter",
-		"SublimeLinter-csslint"
+		"SublimeLinter-csslint",
+		"UnrealScriptIDE"
 	],
 	"sidebar_small": true,
 	"tabs_small": true,

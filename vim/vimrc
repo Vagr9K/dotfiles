@@ -109,10 +109,9 @@ endfun
 autocmd FileType * autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
 
 "Theme config
-set t_Co=16 "16-color mode
 syntax enable "Enable syntax highlighting
 set background=dark
-colorscheme solarized
+colorscheme monokai
 
 "AirLine settings
 ""Remember to patch fonts!
