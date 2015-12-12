@@ -18,3 +18,5 @@ setopt AUTO_CD
 # Extended glob operator
 setopt EXTENDED_GLOB
 
+#ARCH: Package manager auto-search
+source /usr/share/doc/pkgfile/command-not-found.zsh
