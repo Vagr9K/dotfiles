@@ -20,6 +20,7 @@ fi
 export EDITOR='vim'
 export VISUAL='vim'
 export PAGER='less'
+export PROFILE_LOADED='true'
 
 #Terminal color mode
 if [ ! -z "$TMUX" ]
@@ -53,7 +54,6 @@ typeset -gU cdpath fpath mailpath path
 
 #Python
 export WORKON_HOME=~/.virtualenvs
-source /usr/bin/virtualenvwrapper.sh
 
 #Scripts folder path
 SCRIPTSPATH="$HOME/.dotfiles/scripts/"
