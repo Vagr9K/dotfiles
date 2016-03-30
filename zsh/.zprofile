@@ -70,6 +70,9 @@ path=(
    $path
 )
 
+#For Cygwin
+export CYGWIN="winsymlinks:nativestrict"
+
 #
 # Less
 #
