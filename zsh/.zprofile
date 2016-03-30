@@ -62,6 +62,7 @@ CCOMPOSER="$HOME/.composer/"
 
 # Set the list of directories that Zsh searches for programs.
 path=(
+   /usr/lib/ccache/bin/
    /usr/{bin,sbin}
    /usr/local/{bin,sbin}
    "$COMPOSER/vendor/bin"

@@ -23,5 +23,17 @@ source "$HOME/.dotfiles/zsh/.zprofile"
 #Virtualenvwrapper
 source /usr/bin/virtualenvwrapper.sh
 
-#ARCH: Package manager auto-search
-source /usr/share/doc/pkgfile/command-not-found.zsh
+case "$(uname -s)" in
+
+   Linux)
+        #ARCH: Package manager auto-search
+        source /usr/share/doc/pkgfile/command-not-found.zsh
+     ;;
+
+   CYGWIN*|MINGW32*|MSYS*)
+     ;;
+
+   *)
+    #Other OS
+     ;;
+esac
