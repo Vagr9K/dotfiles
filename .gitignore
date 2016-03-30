@@ -3,6 +3,7 @@
 local/*
 #Ignore compiled autocomplete dump
 zsh/.zcompdump*
+zsh/.zcompcache*
 #Ignore zsh history
 zsh/.zhistory
 #Ignore vim plugins except Vundle
