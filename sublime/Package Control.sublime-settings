@@ -1,4 +1,5 @@
 {
+	"bootstrapped": true,
 	"in_process_packages":
 	[
 	],
@@ -16,11 +17,13 @@
 		"JSHint Gutter",
 		"Markdown Preview",
 		"MarkdownEditing",
+		"Material Theme",
 		"Package Control",
 		"PackageResourceViewer",
 		"PHPUnit",
 		"Predawn",
 		"Predawn Monokai",
+		"Seti_UI",
 		"SideBarEnhancements",
 		"SublimeCodeIntel",
 		"SublimeLinter",
@@ -28,8 +31,10 @@
 		"SublimeLinter-flake8",
 		"SublimeLinter-phpcs",
 		"SublimeREPL",
+		"Theme - Afterglow",
 		"Theme - Asphalt",
 		"Theme - Brogrammer",
+		"Theme - Spacegray",
 		"UnrealScriptIDE",
 		"Xdebug Client"
 	]

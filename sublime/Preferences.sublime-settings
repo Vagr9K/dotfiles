@@ -1,26 +1,31 @@
 {
-	"color_scheme": "Packages/Predawn Monokai/Predawn Monokai.tmTheme",
+	"caret_extra_bottom": 3,
+	"caret_extra_top": 3,
+	"caret_extra_width": 2,
 	"findreplace_small": true,
 	"font_size": 9,
+	"highlight_line": true,
 	"ignored_packages":
 	[
-		"Anaconda",
-		"Xdebug Client",
-		"SublimeREPL",
-		"PHPUnit",
 		"ColorPicker",
-		"SublimeLinter-flake8",
-		"PackageResourceViewer",
-		"Vintage",
-		"MarkdownEditing",
 		"Markdown Preview",
-		"UserBAK",
-		"SublimeLinter-phpcs",
+		"MarkdownEditing",
+		"PackageResourceViewer",
+		"PHPUnit",
 		"SublimeLinter",
 		"SublimeLinter-csslint",
-		"UnrealScriptIDE"
+		"SublimeLinter-flake8",
+		"SublimeLinter-phpcs",
+		"SublimeREPL",
+		"UnrealScriptIDE",
+		"UserBAK",
+		"Vintage",
+		"Xdebug Client"
 	],
+	"material_theme_small_statusbar": true,
+	"material_theme_small_tab": true,
+	"overlay_scroll_bars": "disabled",
 	"sidebar_small": true,
 	"tabs_small": true,
-	"theme": "predawn.sublime-theme"
+	"theme": "Material-Theme-Darker.sublime-theme"
 }
