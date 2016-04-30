@@ -17,6 +17,8 @@ setopt GLOB_DOTS
 setopt AUTO_CD
 # Extended glob operator
 setopt EXTENDED_GLOB
+#Remove overwrite warnings
+setopt clobber
 
 #Fix $PATH
 source "$HOME/.dotfiles/zsh/.zprofile"
