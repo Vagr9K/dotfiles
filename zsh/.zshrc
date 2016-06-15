@@ -22,6 +22,14 @@ setopt clobber
 
 #Fix $PATH
 source "$HOME/.dotfiles/zsh/.zprofile"
+#Ruby
+##Rbenv init
+eval "$(rbenv init -)"
+##System ruby path test
+if [ "$(rbenv version | cut -d " " -f1)" = "system" ]
+then
+    PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
+fi
 #Virtualenvwrapper
 source /usr/bin/virtualenvwrapper.sh
 
