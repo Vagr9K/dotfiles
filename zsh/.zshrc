@@ -20,9 +20,12 @@ setopt EXTENDED_GLOB
 #Remove overwrite warnings
 setopt clobber
 
-#Fix $PATH
+# Ignore commands starting with spcae
+setopt histignorespace
+
+# Fix $PATH
 source "$HOME/.dotfiles/zsh/.zprofile"
-#Ruby
+# Ruby
 ##Rbenv init
 eval "$(rbenv init -)"
 ##System ruby path test
@@ -30,7 +33,7 @@ if [ "$(rbenv version | cut -d " " -f1)" = "system" ]
 then
     PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
 fi
-#Virtualenvwrapper
+# Virtualenvwrapper
 source /usr/bin/virtualenvwrapper.sh
 
 case "$(uname -s)" in

@@ -1,0 +1,14 @@
+# Default config.
+#
+name: Base
+root: ~/
+
+windows:
+    - Main :
+    - Shell :
+        layout: 2b16,179x51,0,0{89x51,0,0[89x28,0,0,1,89x22,0,29,10],89x51,90,0,5}
+        panes:
+            - ' tmux new-window -t 0 -n Htop -d && tmux send-keys -t "Base:0.1" " sudo htop" Enter && tmux send-keys -t "Base:2.1" " clear" Enter'
+            -
+            -
+
