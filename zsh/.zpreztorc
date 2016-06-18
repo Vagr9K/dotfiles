@@ -34,7 +34,6 @@ zstyle ':prezto:load' pmodule \
   'ssh' \
   'completion' \
   'history-substring-search' \
-  'autosuggestions'\
   'tmux'\
   'prompt'
 
@@ -103,7 +102,7 @@ zstyle ':prezto:module:prompt' theme 'agnoster'
 #
 
 # Set the SSH identities to load into the agent.
-zstyle ':prezto:module:ssh:load' identities 'id_rsa'
+zstyle ':prezto:module:ssh:load' identities ''
 
 #
 # Syntax Highlighting

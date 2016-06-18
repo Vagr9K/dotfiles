@@ -25,6 +25,7 @@ setopt histignorespace
 
 # Fix $PATH
 source "$HOME/.dotfiles/zsh/.zprofile"
+
 # Ruby
 ##Rbenv init
 eval "$(rbenv init -)"
