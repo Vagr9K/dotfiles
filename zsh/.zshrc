@@ -23,6 +23,8 @@ setopt clobber
 # Ignore commands starting with spcae
 setopt histignorespace
 
+# Set Tmuxinator alias
+alias mux="tmuxinator start"
 # Fix $PATH
 source "$HOME/.dotfiles/zsh/.zprofile"
 
