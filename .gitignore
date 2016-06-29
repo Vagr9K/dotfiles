@@ -13,3 +13,6 @@ vim/bundle/*
 sublime/*
 !sublime/install.sh
 !sublime/*.sublime-settings
+#Ignore Tmux plugins except tpm
+tmux/plugins/*
+!tmux/plugins/tpm
