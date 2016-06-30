@@ -16,3 +16,13 @@ sublime/*
 #Ignore Tmux plugins except tpm
 tmux/plugins/*
 !tmux/plugins/tpm
+#Ignore Atom cache/apm cache
+atom/.apm
+atom/blob-store
+atom/compile-cache
+atom/.node-gyp
+atom/packages
+atom/recovery
+atom/storage
+atom/nohup.out
+

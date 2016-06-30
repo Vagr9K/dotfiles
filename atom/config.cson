@@ -1,0 +1,39 @@
+"*":
+  core:
+    autoHideMenuBar: true
+    disabledPackages: [
+      "atom-beautify"
+      "editorconfig"
+      "pigments"
+    ]
+    themes: [
+      "one-dark-ui"
+      "base16-tomorrow-dark-theme"
+    ]
+  editor:
+    fontFamily: "Source Code Pro"
+    fontSize: 13
+    invisibles: {}
+    showIndentGuide: true
+    showInvisibles: true
+    softWrap: true
+  "exception-reporting":
+    userId: "591fa0b3-d088-2a1c-192c-23abc3bd6aa5"
+  linter:
+    lintOnFly: false
+  "linter-flake8":
+    ignoreErrorCodes: [
+      "D100"
+      "D101"
+      "D102"
+      "D103"
+      "D104"
+      "D105"
+      "E501"
+    ]
+  minimap:
+    plugins:
+      linter: true
+      linterDecorationsZIndex: 0
+  welcome:
+    showOnStartup: false
