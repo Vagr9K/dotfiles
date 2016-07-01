@@ -20,7 +20,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'scrooloose/syntastic'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'klen/python-mode'
-Plugin 'altercation/vim-colors-solarized'
+Plugin 'chriskempson/vim-tomorrow-theme'
 Plugin 'morhetz/gruvbox'
 Plugin 'sickill/vim-monokai'
 "Plugin 'vim-ruby/vim-ruby'
@@ -112,7 +112,7 @@ autocmd FileType * autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespa
 "Theme config
 syntax enable "Enable syntax highlighting
 set background=dark
-colorscheme monokai
+colorscheme Tomorrow-Night
 
 "AirLine settings
 ""Remember to patch fonts!
