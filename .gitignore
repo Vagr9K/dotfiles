@@ -6,6 +6,10 @@ zsh/.zcompdump*
 zsh/.zcompcache*
 #Ignore zsh history
 zsh/.zhistory
+#Same as above for root zsh
+zsh-root/.zcomp*
+zsh-root/.zsh_history
+zsh-root/.zdirs
 #Ignore vim plugins except Vundle
 vim/bundle/*
 !vim/bundle/Vundle.vim
