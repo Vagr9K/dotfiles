@@ -60,7 +60,7 @@ function ListPacFiles()
 function PrintError()
 {
 	echo "Usage: arch-tools command"
-	echo "rankmirros     - Rerank pacman mirrors."
+	echo "rankmirrors    - Rerank pacman mirrors."
 	echo "abicpp         - List packages that use the old C++ ABI."
 	echo "configchanges  - List changed configuration files."
 	echo "pkgfilechanges - List changed package files."
