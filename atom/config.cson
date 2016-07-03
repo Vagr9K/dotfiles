@@ -2,9 +2,7 @@
   core:
     autoHideMenuBar: true
     disabledPackages: [
-      "atom-beautify"
       "editorconfig"
-      "pigments"
     ]
     themes: [
       "one-dark-ui"
