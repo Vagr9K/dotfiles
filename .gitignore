@@ -1,6 +1,8 @@
 #Ignore local settings
 *.local
 local/*
+#Ignore .zprezto and changes to that folder
+zsh/.zprezto
 #Ignore compiled autocomplete dump
 zsh/.zcompdump*
 zsh/.zcompcache*

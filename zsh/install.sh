@@ -4,6 +4,9 @@ ConfigFolder="$HOME/.dotfiles/zsh"
 EnvPath="$ConfigFolder/.zshenv"
 EnvLink="$HOME/.zshenv"
 ModifyPath="$ConfigFolder/prezto_mods/modify.sh"
+#Install prezto
+echo "Installing prezto."
+git clone --recursive https://github.com/sorin-ionescu/prezto.git "$HOME/.dotfiles/zsh/.zprezto"
 #Update prezto
 printf "${Yellow}Updating prezto.${Yellow}\n"
 cd "$ConfigFolder/.zprezto/"
@@ -17,4 +20,3 @@ fi
 #Set custom zsh configuration directory
 printf "${Yellow}Symlinking .zshenv.${Red}\n"
 ln -sf "$EnvPath" "$EnvLink"
-
