@@ -31,7 +31,11 @@
     ]
   minimap:
     plugins:
+      "find-and-replace": true
+      "find-and-replaceDecorationsZIndex": 0
       linter: true
       linterDecorationsZIndex: 0
+      pigments: true
+      pigmentsDecorationsZIndex: 0
   welcome:
     showOnStartup: false
