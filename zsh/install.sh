@@ -15,7 +15,7 @@ git pull origin master && git submodule update --init --recursive
 if [ -e "$ModifyPath" ]
 then
     printf "${Yellow}Applying modifications.${Red}\n"
-     ./"$ModifyPath"
+    source "$ModifyPath"
 fi
 #Set custom zsh configuration directory
 printf "${Yellow}Symlinking .zshenv.${Red}\n"
