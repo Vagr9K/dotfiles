@@ -17,7 +17,7 @@ setopt GLOB_DOTS
 setopt AUTO_CD
 # Extended glob operator
 setopt EXTENDED_GLOB
-#Remove overwrite warnings
+# Remove overwrite warnings
 setopt clobber
 
 # Ignore commands starting with spcae
