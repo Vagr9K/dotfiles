@@ -4,9 +4,12 @@ TmuxPath="$HOME/.dotfiles/tmux/tmux.conf"
 printf "${Green}Symlinking .tmux.conf.${Red}\n"
 ln -s "$TmuxPath" "$TmuxLink"
 
-printf "${Green}Symlinking base.yml.${Red}\n"
-BaseLink="$HOME/.tmuxinator/base.yml"
-BasePath="$HOME/.dotfiles/tmux/tmuxinator/base.yml"
-mkdir "$HOME/.tmuxinator"
-ln -s "$BasePath" "$BaseLink"
-
+printf "${Green}Installing Tmuxinator's preferences.${Red}\n"
+echo "${Yellow}Do you wish to remove Tmuxinator preferences folder?"
+select yn in "Yes" "No"; do
+    case $yn in
+        Yes ) rm -rf "$HOME/.tmuxinator"; break;;
+        No ) exit;;
+    esac
+done
+ln -s "$HOME/.dotfiles/tmux/tmuxinator" "$HOME/.tmuxinator"

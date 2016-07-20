@@ -1,0 +1,11 @@
+# Default config.
+#
+name: Dev
+root: ~/
+
+windows:
+    - Main :
+    - Shell :
+    - Project:
+        panes:
+            - ' tmux new-window -t 0 -n Htop -d && tmux send-keys -t "Dev:0.1" " sudo htop" Enter && tmux send-keys -t "Dev:3.1" " clear" Enter'
