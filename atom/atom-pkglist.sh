@@ -25,6 +25,11 @@ function PrintError(){
     echo "Invalid arguments passed. Use -s (save) os -i (install) flags."
 }
 
+function DisableMetrics(){
+    echo "Disabling metrics."
+    "$apm" disable metrics
+}
+
 if [ "$#" -eq 1 ]
 then
     if [ "$1" = "-s" ]
@@ -33,6 +38,7 @@ then
     elif [ "$1" = "-i" ]
     then
         InstallPkglist
+        DisableMetrics
     else
         PrintError
     fi

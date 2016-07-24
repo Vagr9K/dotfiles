@@ -1,12 +1,16 @@
 "*":
+  "atom-beautify":
+    general:
+      analytics: false
   core:
     autoHideMenuBar: true
     disabledPackages: [
       "editorconfig"
+      "metrics"
     ]
     themes: [
-      "one-dark-ui"
-      "base16-tomorrow-dark-theme"
+      "nucleus-dark-ui"
+      "dracula-theme"
     ]
   editor:
     fontFamily: "Source Code Pro"
@@ -18,6 +22,7 @@
   "exception-reporting":
     userId: "591fa0b3-d088-2a1c-192c-23abc3bd6aa5"
   linter:
+    errorPanelHeight: 23
     lintOnFly: false
   "linter-flake8":
     ignoreErrorCodes: [
