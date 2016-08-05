@@ -31,5 +31,7 @@ atom/packages
 atom/recovery
 atom/storage
 atom/nohup.out
+atom/.npm
+atom/electron
 #Ignore Guake gconf "mtime" file.
 guake/style/%gconf.xml
