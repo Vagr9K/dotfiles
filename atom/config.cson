@@ -33,6 +33,7 @@
       "D104"
       "D105"
       "E501"
+      "E402"
     ]
   minimap:
     plugins:
