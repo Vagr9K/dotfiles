@@ -37,7 +37,7 @@ then
     PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
 fi
 # Virtualenvwrapper
-source /usr/bin/virtualenvwrapper.sh
+source "$HOME/.local/bin/virtualenvwrapper.sh"
 
 case "$(uname -s)" in
 
