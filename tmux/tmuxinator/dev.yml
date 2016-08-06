@@ -6,6 +6,8 @@ root: ~/
 windows:
     - Main :
     - Shell :
+    - Shell :
     - Project:
         panes:
-            - ' tmux new-window -t 0 -n Htop -d && tmux send-keys -t "Dev:0.1" " sudo htop" Enter && tmux send-keys -t "Dev:3.1" " clear" Enter'
+            - ' tmux new-window -t 0 -n Htop -d && tmux send-keys -t "Dev:0.1" " sudo htop" Enter && tmux send-keys -t "Dev:4.1" " clear" Enter'
+    - REPL :
