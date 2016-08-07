@@ -25,6 +25,7 @@
     errorPanelHeight: 23
     lintOnFly: false
   "linter-flake8":
+    executablePath: "/home/ruben/.local/bin/flake8"
     ignoreErrorCodes: [
       "D100"
       "D101"
