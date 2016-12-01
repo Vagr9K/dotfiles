@@ -2,13 +2,33 @@
   "atom-beautify":
     general:
       analytics: false
+  "autoclose-html":
+    forceInline: [
+      "title"
+      "h1"
+      "h2"
+      "h3"
+      "h4"
+      "h5"
+      "h6"
+      "p"
+      "img"
+      "link"
+    ]
   core:
     autoHideMenuBar: true
     disabledPackages: [
-      "editorconfig"
       "metrics"
+      "linter-rubocop"
+      "linter-shellcheck"
+      "simple-drag-drop-text"
+      "merge-conflicts"
     ]
     telemetryConsent: "no"
+    themes: [
+      "nucleus-dark-ui"
+      "one-dark-syntax"
+    ]
   editor:
     fontFamily: "Source Code Pro"
     fontSize: 13
