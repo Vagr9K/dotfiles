@@ -9,10 +9,6 @@
       "metrics"
     ]
     telemetryConsent: "no"
-    themes: [
-      "nucleus-dark-ui"
-      "dracula-theme"
-    ]
   editor:
     fontFamily: "Source Code Pro"
     fontSize: 13
