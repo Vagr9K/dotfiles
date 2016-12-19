@@ -1,6 +1,6 @@
 # Default config.
 #
-name: Dev
+name: DevDB
 root: ~/
 
 windows:
@@ -13,3 +13,6 @@ windows:
     - REPL :
         panes:
             - 'ipython'
+    - DB :
+        panes:
+            - 'open-db.sh'
