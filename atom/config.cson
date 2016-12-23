@@ -2,6 +2,23 @@
   "atom-beautify":
     general:
       analytics: false
+  "atom-material-ui":
+    colors:
+      abaseColor: "#aad875"
+      accentColor: "#6f8853"
+      genAccent: true
+      paintCursor: true
+      predefinedColor: "Green"
+    fonts:
+      fontSize: 15
+    tabs:
+      compactTabs: true
+      noTabMinWidth: true
+    treeView:
+      compactList: true
+    ui:
+      panelContrast: true
+      panelShadows: true
   "autoclose-html":
     forceInline: [
       "title"
@@ -15,22 +32,29 @@
       "img"
       "link"
     ]
+  "autocomplete-modules":
+    babelPluginModuleResolver: true
+    webpack: true
+  "autocomplete-python":
+    pythonPaths: "/usr/bin/python3"
+    showTooltips: true
+    useKite: false
   core:
     autoHideMenuBar: true
     disabledPackages: [
       "metrics"
       "linter-rubocop"
       "linter-shellcheck"
-      "simple-drag-drop-text"
-      "merge-conflicts"
+      "django-templates"
+      "docblockr"
     ]
     telemetryConsent: "no"
     themes: [
-      "nucleus-dark-ui"
-      "one-dark-syntax"
+      "atom-material-ui"
+      "spacegray-atom-dark-syntax"
     ]
   editor:
-    fontFamily: "Source Code Pro"
+    fontFamily: "Source Code Pro Medium"
     fontSize: 13
     invisibles: {}
     showIndentGuide: true
@@ -41,6 +65,7 @@
   linter:
     errorPanelHeight: 23
     lintOnFly: false
+    showErrorTabLine: true
   "linter-flake8":
     executablePath: "/home/ruben/.local/bin/flake8"
     ignoreErrorCodes: [
@@ -53,6 +78,7 @@
       "E501"
       "E402"
     ]
+    maxLineLength: 100
   minimap:
     plugins:
       "find-and-replace": true
