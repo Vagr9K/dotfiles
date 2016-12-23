@@ -28,6 +28,10 @@ alias mux="tmuxinator start"
 # Fix $PATH
 source "$HOME/.dotfiles/zsh/.zprofile"
 
+# Set Atom aliases
+alias atom="atom-beta"
+alias apm="apm-beta"
+
 # Ruby
 ##Rbenv init
 eval "$(rbenv init -)"
