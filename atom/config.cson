@@ -70,6 +70,9 @@
     tabType: "soft"
   "exception-reporting":
     userId: "591fa0b3-d088-2a1c-192c-23abc3bd6aa5"
+  "git-plus":
+    general:
+      analytics: false
   linter:
     errorPanelHeight: 23
     lintOnFly: false
