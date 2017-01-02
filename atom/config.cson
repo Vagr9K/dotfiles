@@ -2,6 +2,10 @@
   "atom-beautify":
     general:
       analytics: false
+    html:
+      indent_inner_html: true
+      indent_size: 2
+      preserve_newlines: false
   "atom-material-ui":
     colors:
       abaseColor: "#aad875"
@@ -31,6 +35,7 @@
       "p"
       "img"
       "link"
+      "td"
     ]
   "autocomplete-modules":
     babelPluginModuleResolver: true
@@ -47,6 +52,7 @@
       "linter-shellcheck"
       "django-templates"
       "docblockr"
+      "react"
     ]
     telemetryConsent: "no"
     themes: [
@@ -54,12 +60,14 @@
       "spacegray-atom-dark-syntax"
     ]
   editor:
-    fontFamily: "Source Code Pro Medium"
+    fontFamily: "Hack"
     fontSize: 13
     invisibles: {}
     showIndentGuide: true
     showInvisibles: true
     softWrap: true
+    tabLength: 4
+    tabType: "soft"
   "exception-reporting":
     userId: "591fa0b3-d088-2a1c-192c-23abc3bd6aa5"
   linter:
@@ -87,5 +95,10 @@
       linterDecorationsZIndex: 0
       pigments: true
       pigmentsDecorationsZIndex: 0
+  "tool-bar":
+    iconSize: "16px"
+    position: "Left"
+  "tree-view":
+    autoReveal: true
   welcome:
     showOnStartup: false

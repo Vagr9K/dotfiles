@@ -1,1 +1,14 @@
-{}
+[
+  {
+    title: "DjangoProject"
+    paths: [
+      "/home/ruben/Git/djangoproject.com"
+    ]
+  }
+  {
+    title: "React101"
+    paths: [
+      "/home/ruben/Git/TestRange/React101"
+    ]
+  }
+]
