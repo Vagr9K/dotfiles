@@ -52,6 +52,10 @@ typeset -gU cdpath fpath mailpath path
 # )
 #
 
+#NPM
+NPMBINPATH="$HOME/.node_modules/bin"
+export npm_config_prefix=~/.node_modules
+
 #Python
 export WORKON_HOME=~/.virtualenvs
 
@@ -68,6 +72,7 @@ path=(
    /usr/local/{bin,sbin}
    "$COMPOSER/vendor/bin"
    $SCRIPTSPATH
+   $NPMBINPATH
    $path
 )
 
