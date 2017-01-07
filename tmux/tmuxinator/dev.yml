@@ -10,6 +10,9 @@ windows:
     - Project:
         panes:
             - 'cd ~/Git/ && tmux new-window -t 0 -n Htop -d && tmux send-keys -t "Dev:0.1" " sudo htop" Enter && tmux send-keys -t "Dev:4.1" " clear" Enter'
+    - Server:
+        panes:
+            - 'cd ~/Git/ && clear'
     - REPL :
         panes:
             - 'ipython'
