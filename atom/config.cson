@@ -6,6 +6,10 @@
       indent_inner_html: true
       indent_size: 2
       preserve_newlines: false
+    js:
+      end_with_comma: true
+    jsx:
+      end_with_newline: true
   "atom-material-ui":
     colors:
       abaseColor: "#aad875"
@@ -23,6 +27,8 @@
     ui:
       panelContrast: true
       panelShadows: true
+  "atom-ternjs":
+    useSnippets: true
   "autoclose-html":
     forceInline: [
       "title"
@@ -44,8 +50,24 @@
     pythonPaths: "/usr/bin/python3"
     showTooltips: true
     useKite: false
+  build:
+    saveOnBuild: true
+    stealFocus: false
   core:
     autoHideMenuBar: true
+    customFileTypes:
+      "source.ini": [
+        ".buckconfig"
+        ".flowconfig"
+        ".hgrc"
+      ]
+      "source.json": [
+        ".arcconfig"
+        "BUCK.autodeps"
+      ]
+      "source.python": [
+        "BUCK"
+      ]
     disabledPackages: [
       "metrics"
       "linter-rubocop"
@@ -54,10 +76,13 @@
       "docblockr"
       "react"
     ]
+    packagesWithKeymapsDisabled: [
+      "build"
+    ]
     telemetryConsent: "no"
     themes: [
       "atom-material-ui"
-      "spacegray-atom-dark-syntax"
+      "base16-tomorrow-dark-theme"
     ]
   editor:
     fontFamily: "Hack"
@@ -77,6 +102,8 @@
     errorPanelHeight: 23
     lintOnFly: false
     showErrorTabLine: true
+  "linter-eslint":
+    disableWhenNoEslintConfig: false
   "linter-flake8":
     executablePath: "/home/ruben/.local/bin/flake8"
     ignoreErrorCodes: [
@@ -90,6 +117,8 @@
       "E402"
     ]
     maxLineLength: 100
+  "linter-stylelint":
+    useStandard: true
   minimap:
     plugins:
       "find-and-replace": true
@@ -98,6 +127,72 @@
       linterDecorationsZIndex: 0
       pigments: true
       pigmentsDecorationsZIndex: 0
+  nuclide:
+    "nuclide-home":
+      showHome: false
+    use:
+      "nuclide-adb-logcat": false
+      "nuclide-arcanist": false
+      "nuclide-blame": false
+      "nuclide-blame-provider-hg": false
+      "nuclide-bookshelf": false
+      "nuclide-buck": false
+      "nuclide-buck-ios": false
+      "nuclide-clang": false
+      "nuclide-clipboard-path": false
+      "nuclide-code-format": false
+      "nuclide-code-highlight": false
+      "nuclide-console": false
+      "nuclide-context-view": false
+      "nuclide-ctags": false
+      "nuclide-current-working-directory": false
+      "nuclide-datatip": false
+      "nuclide-debugger-php": false
+      "nuclide-diagnostics-datatip-provider": false
+      "nuclide-diagnostics-store": false
+      "nuclide-diagnostics-ui": false
+      "nuclide-diff-view": false
+      "nuclide-file-tree": false
+      "nuclide-flow": false
+      "nuclide-fuzzy-filename-provider": false
+      "nuclide-hack": false
+      "nuclide-hg-conflict-resolver": false
+      "nuclide-hg-repository": false
+      "nuclide-hhvm": false
+      "nuclide-home": false
+      "nuclide-http-request-sender": false
+      "nuclide-ios-simulator-logs": false
+      "nuclide-json": false
+      "nuclide-language-hack": false
+      "nuclide-language-reason": false
+      "nuclide-loaded-shell-hook": false
+      "nuclide-move-item-to-available-pane": false
+      "nuclide-navigation-stack": false
+      "nuclide-notifications": false
+      "nuclide-nux": false
+      "nuclide-objc": false
+      "nuclide-ocaml": false
+      "nuclide-open-filenames-provider": false
+      "nuclide-outline-view": false
+      "nuclide-python": false
+      "nuclide-quick-open": false
+      "nuclide-react-native": false
+      "nuclide-recent-files-provider": false
+      "nuclide-recent-files-service": false
+      "nuclide-refactorizer": false
+      "nuclide-remote-atom": false
+      "nuclide-remote-projects": false
+      "nuclide-source-control-side-bar": false
+      "nuclide-swift": false
+      "nuclide-task-runner": false
+      "nuclide-test-runner": false
+      "nuclide-type-coverage": false
+      "nuclide-ui": false
+      "nuclide-unicode-datatip": false
+      "nuclide-vcs-log": false
+      "nuclide-working-sets": false
+      "nuclide-workspace-view-locations": false
+      "nuclide-workspace-views": false
   "tool-bar":
     iconSize: "16px"
     position: "Left"
