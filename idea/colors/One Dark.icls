@@ -1,7 +1,8 @@
 <scheme name="One dark" version="142" parent_scheme="Darcula">
   <option name="LINE_SPACING" value="1.2" />
-  <option name="EDITOR_FONT_SIZE" value="14" />
+  <option name="EDITOR_FONT_SIZE" value="13" />
   <option name="CONSOLE_FONT_NAME" value="DejaVu Sans Mono" />
+  <option name="CONSOLE_FONT_SIZE" value="14" />
   <option name="EDITOR_FONT_NAME" value="Droid Sans Mono" />
   <colors>
     <option name="ADDED_LINES_COLOR" value="98c379" />
