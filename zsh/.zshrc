@@ -23,6 +23,9 @@ setopt clobber
 # Ignore commands starting with spcae
 setopt histignorespace
 
+# Fix sudo not using aliases
+alias sudo='sudo '
+
 # Set Tmuxinator alias
 alias mux="tmuxinator start"
 # Fix $PATH
