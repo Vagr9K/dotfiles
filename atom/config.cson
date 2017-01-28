@@ -53,6 +53,7 @@
   build:
     saveOnBuild: true
     stealFocus: false
+  "clang-format": {}
   core:
     autoHideMenuBar: true
     customFileTypes:
@@ -85,7 +86,7 @@
       "base16-tomorrow-dark-theme"
     ]
   editor:
-    fontFamily: "Hack"
+    fontFamily: "Source Code Pro"
     fontSize: 13
     invisibles: {}
     showIndentGuide: true
@@ -198,5 +199,6 @@
     position: "Left"
   "tree-view":
     autoReveal: true
+    hideVcsIgnoredFiles: true
   welcome:
     showOnStartup: false
