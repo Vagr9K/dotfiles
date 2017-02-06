@@ -7,6 +7,9 @@
       indent_size: 2
       preserve_newlines: false
     js:
+      brace_style: "end-expand"
+      default_beautifier: "Pretty Diff"
+      disabled: true
       end_with_comma: true
     jsx:
       end_with_newline: true
@@ -80,20 +83,24 @@
     packagesWithKeymapsDisabled: [
       "build"
     ]
+    projectHome: "/home/ruben/Git"
     telemetryConsent: "no"
     themes: [
       "atom-material-ui"
       "base16-tomorrow-dark-theme"
     ]
   editor:
-    fontFamily: "Source Code Pro"
+    fontFamily: "Source Code Pro Semibold"
     fontSize: 13
     invisibles: {}
+    scrollSensitivity: 50
     showIndentGuide: true
     showInvisibles: true
     softWrap: true
     tabLength: 4
     tabType: "soft"
+  esformatter:
+    formatOnSave: true
   "exception-reporting":
     userId: "591fa0b3-d088-2a1c-192c-23abc3bd6aa5"
   "git-plus":
@@ -105,6 +112,7 @@
     showErrorTabLine: true
   "linter-eslint":
     disableWhenNoEslintConfig: false
+    fixOnSave: true
   "linter-flake8":
     executablePath: "/home/ruben/.local/bin/flake8"
     ignoreErrorCodes: [
@@ -199,6 +207,14 @@
     position: "Left"
   "tree-view":
     autoReveal: true
-    hideVcsIgnoredFiles: true
   welcome:
     showOnStartup: false
+".js.regexp.replacement.source":
+  editor:
+    tabLength: 2
+".js.regexp.source":
+  editor:
+    tabLength: 2
+".js.source":
+  editor:
+    tabLength: 2
