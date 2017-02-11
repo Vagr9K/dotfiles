@@ -25,6 +25,10 @@ setopt histignorespace
 
 # Fix sudo not using aliases
 alias sudo='sudo '
+alias _='sudo '
+
+# Fix rm
+alias rm='rm'
 
 # Set Tmuxinator alias
 alias mux="tmuxinator start"
