@@ -31,6 +31,7 @@
       panelContrast: true
       panelShadows: true
   "atom-ternjs":
+    inlineFnCompletionDocumentation: true
     useSnippets: true
   "autoclose-html":
     forceInline: [
@@ -53,6 +54,8 @@
     pythonPaths: "/usr/bin/python3"
     showTooltips: true
     useKite: false
+  "base16-syntax":
+    scheme: "Ocean"
   build:
     saveOnBuild: true
     stealFocus: false
@@ -78,7 +81,6 @@
       "linter-shellcheck"
       "django-templates"
       "docblockr"
-      "react"
     ]
     packagesWithKeymapsDisabled: [
       "build"
@@ -106,6 +108,8 @@
   "git-plus":
     general:
       analytics: false
+  "language-babel":
+    autoIndentJSX: true
   linter:
     errorPanelHeight: 23
     lintOnFly: false
@@ -202,6 +206,10 @@
       "nuclide-working-sets": false
       "nuclide-workspace-view-locations": false
       "nuclide-workspace-views": false
+  "seti-ui":
+    compactView: true
+    fileIcons: false
+    themeColor: "Green"
   "tool-bar":
     iconSize: "16px"
     position: "Left"
@@ -209,6 +217,10 @@
     autoReveal: true
   welcome:
     showOnStartup: false
+".js.jsx.source":
+  editor:
+    preferredLineLength: 100
+    tabLength: 2
 ".js.regexp.replacement.source":
   editor:
     tabLength: 2
