@@ -25,16 +25,11 @@ zstyle ':prezto:*:*' color 'yes'
 # The order matters.
 zstyle ':prezto:load' pmodule \
   'environment' \
-  'terminal' \
-  'editor' \
   'history' \
   'directory' \
-  'spectrum' \
   'utility' \
-  'ssh' \
   'completion' \
   'history-substring-search' \
-  'tmux' \
   'python' \
   'prompt'
 
@@ -43,10 +38,10 @@ zstyle ':prezto:load' pmodule \
 #
 
 # Set the key mapping style to 'emacs' or 'vi'.
-zstyle ':prezto:module:editor' key-bindings 'emacs'
+#zstyle ':prezto:module:editor' key-bindings 'emacs'
 
 # Auto convert .... to ../..
-zstyle ':prezto:module:editor' dot-expansion 'yes'
+#zstyle ':prezto:module:editor' dot-expansion 'yes'
 
 #
 # Git
@@ -103,7 +98,7 @@ zstyle ':prezto:module:prompt' theme 'agnoster2'
 #
 
 # Set the SSH identities to load into the agent.
-zstyle ':prezto:module:ssh:load' identities ''
+#zstyle ':prezto:module:ssh:load' identities ''
 
 #
 # Syntax Highlighting
@@ -142,8 +137,7 @@ zstyle ':prezto:module:ssh:load' identities ''
 #
 
 # Auto start a session when Zsh is launched in a local terminal.
-zstyle ':prezto:module:tmux:auto-start' local 'no'
+#zstyle ':prezto:module:tmux:auto-start' local 'no'
 
 # Auto start a session when Zsh is launched in a SSH connection.
-zstyle ':prezto:module:tmux:auto-start' remote 'yes'
-
+#zstyle ':prezto:module:tmux:auto-start' remote 'yes'
