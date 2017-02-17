@@ -78,9 +78,9 @@
     disabledPackages: [
       "metrics"
       "linter-rubocop"
-      "linter-shellcheck"
       "django-templates"
       "docblockr"
+      "linter-shellcheck"
     ]
     packagesWithKeymapsDisabled: [
       "build"

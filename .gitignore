@@ -1,14 +1,16 @@
 #Ignore local settings
 *.local
 local/*
-#Ignore .zprezto and changes to that folder
-zsh/.zprezto
+#Ignore zplug and changes to that folder
 zsh/zplug
+zsh/.zprezto
 #Ignore compiled autocomplete dump
 zsh/.zcompdump*
 zsh/.zcompcache*
 #Ignore zsh history
 zsh/.zhistory
+# Ignore compiled files
+zsh/**/*.zwc
 #Same as above for root zsh
 zsh-root/.zcomp*
 zsh-root/.zsh_history
@@ -36,3 +38,5 @@ atom/.npm
 atom/electron
 #Ignore Guake gconf "mtime" file.
 guake/style/%gconf.xml
+#Ignore powerline symlinks
+powerline/powerline.zsh

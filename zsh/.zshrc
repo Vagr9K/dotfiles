@@ -1,34 +1,10 @@
-#
-# Executes commands at the start of an interactive session.
-#
-# Authors:
-#   Sorin Ionescu <sorin.ionescu@gmail.com>
-#
+zmodload zsh/zprof
 
-# Source Prezto.
-if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
-  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
-fi
+# Init zplug
+source "${ZDOTDIR:-$HOME}/zplug/init.zsh"
 
-# Customize to your needs...
-# Dots expansion
-setopt GLOB_DOTS
-# Cd shortcut
-setopt AUTO_CD
-# Extended glob operator
-setopt EXTENDED_GLOB
-# Remove overwrite warnings
-setopt clobber
-
-# Ignore commands starting with spcae
-setopt histignorespace
-
-# Fix sudo not using aliases
-alias sudo='sudo '
-alias _='sudo '
-
-# Fix rm
-alias rm='rm'
+# Load plugins
+source "${ZDOTDIR:-$HOME}/zplugrc.zsh"
 
 # Set Tmuxinator alias
 alias mux="tmuxinator start"
@@ -40,27 +16,10 @@ alias atom="atom-beta"
 alias apm="apm-beta"
 
 # Ruby
-##Rbenv init
-eval "$(rbenv init -)"
-##System ruby path test
-if [ "$(rbenv version | cut -d " " -f1)" = "system" ]
-then
-    PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
-fi
+source "${ZDOTDIR:-$HOME}/external/ruby.zsh"
+
 # Virtualenvwrapper
-source "$HOME/.local/bin/virtualenvwrapper.sh"
+source "$HOME/.local/bin/virtualenvwrapper_lazy.sh"
 
-case "$(uname -s)" in
-
-   Linux)
-        #ARCH: Package manager auto-search
-        source /usr/share/doc/pkgfile/command-not-found.zsh
-     ;;
-
-   CYGWIN*|MINGW32*|MSYS*)
-     ;;
-
-   *)
-    #Other OS
-     ;;
-esac
+#ARCH: Package manager auto-search
+source /usr/share/doc/pkgfile/command-not-found.zsh
