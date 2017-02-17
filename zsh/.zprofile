@@ -1,22 +1,7 @@
-#
-# Executes commands at login pre-zshrc.
-#
-# Authors:
-#   Sorin Ionescu <sorin.ionescu@gmail.com>
-#
+#Export default user name
+export DEFAULT_USER="ruben"
 
-#
-# Browser
-#
-
-if [[ "$OSTYPE" == darwin* ]]; then
-  export BROWSER='open'
-fi
-
-#
-# Editors
-#
-
+# Environment settings
 export EDITOR='vim'
 export VISUAL='vim'
 export PAGER='less'
@@ -31,26 +16,8 @@ else
     export TERM="xterm-256color"
 fi
 
-#
-# Language
-#
-
-if [[ -z "$LANG" ]]; then
-  export LANG='en_US.UTF-8'
-fi
-
-#
-# Paths
-#
-
-# Ensure path arrays do not contain duplicates.
+# Clear duplicates from path arrays.
 typeset -gU cdpath fpath mailpath path
-
-# Set the the list of directories that cd searches.
-# cdpath=(
-#   $cdpath
-# )
-#
 
 #NPM
 NPMBINPATH="$HOME/.node_modules/bin"
@@ -61,45 +28,25 @@ export WORKON_HOME=~/.virtualenvs
 
 #Scripts folder path
 SCRIPTSPATH="$HOME/.dotfiles/scripts/"
-#Composer path
-CCOMPOSER="$HOME/.composer/"
 
-# Set the list of directories that Zsh searches for programs.
+# Set $PATH
 path=(
    "$HOME/.rbenv/bin/"
    /usr/lib/ccache/bin/
    /usr/{bin,sbin}
    /usr/local/{bin,sbin}
-   "$COMPOSER/vendor/bin"
+   "$HOME/.local/bin/"
    $SCRIPTSPATH
    $NPMBINPATH
    $path
 )
 
-#For Cygwin
-export CYGWIN="winsymlinks:nativestrict"
-
-#
-# Less
-#
-
-# Set the default Less options.
-# Mouse-wheel scrolling has been disabled by -X (disable screen clearing).
-# Remove -X and -F (exit if the content fits on one screen) to enable it.
+# Set Less options. Mouse enabled.
 export LESS='-g -i -M -R -S -w -z-4'
 
-# Set the Less input preprocessor.
-# Try both `lesspipe` and `lesspipe.sh` as either might exist on a system.
-if (( $#commands[(i)lesspipe(|.sh)] )); then
-  export LESSOPEN="| /usr/bin/env $commands[(i)lesspipe(|.sh)] %s 2>&-"
-fi
-
-#
-# Temporary Files
-#
-
+# Temp directory variable setup.
 if [[ ! -d "$TMPDIR" ]]; then
-  export TMPDIR="/tmp/$LOGNAME"
+  export TMPDIR="/tmp/$USER"
   mkdir -p -m 700 "$TMPDIR"
 fi
 
