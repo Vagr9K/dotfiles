@@ -15,11 +15,11 @@
       end_with_newline: true
   "atom-material-ui":
     colors:
-      abaseColor: "#aad875"
-      accentColor: "#6f8853"
+      abaseColor: "#ef5350"
+      accentColor: "#59fcff"
       genAccent: true
       paintCursor: true
-      predefinedColor: "Green"
+      predefinedColor: "Red"
     fonts:
       fontSize: 15
     tabs:
@@ -81,6 +81,7 @@
       "django-templates"
       "docblockr"
       "linter-shellcheck"
+      "emmet"
     ]
     packagesWithKeymapsDisabled: [
       "build"
@@ -134,8 +135,14 @@
     useStandard: true
   minimap:
     plugins:
+      cursorline: true
+      cursorlineDecorationsZIndex: 0
       "find-and-replace": true
       "find-and-replaceDecorationsZIndex": 0
+      "git-diff": true
+      "git-diffDecorationsZIndex": 0
+      "highlight-selected": true
+      "highlight-selectedDecorationsZIndex": 0
       linter: true
       linterDecorationsZIndex: 0
       pigments: true
@@ -217,8 +224,15 @@
     autoReveal: true
   welcome:
     showOnStartup: false
+".babel.regexp.source":
+  editor:
+    autoIndent: false
+".css.source.styled":
+  editor:
+    autoIndent: true
 ".js.jsx.source":
   editor:
+    autoIndent: true
     preferredLineLength: 100
     tabLength: 2
 ".js.regexp.replacement.source":
@@ -230,3 +244,6 @@
 ".js.source":
   editor:
     tabLength: 2
+".languagebabel.ttlextension":
+  editor:
+    autoIndent: true

@@ -1,5 +1,3 @@
-zmodload zsh/zprof
-
 # Init zplug
 source "${ZDOTDIR:-$HOME}/zplug/init.zsh"
 
@@ -21,5 +19,5 @@ source "${ZDOTDIR:-$HOME}/external/ruby.zsh"
 # Virtualenvwrapper
 source "$HOME/.local/bin/virtualenvwrapper_lazy.sh"
 
-#ARCH: Package manager auto-search
+# ARCH: Package manager auto-search
 source /usr/share/doc/pkgfile/command-not-found.zsh

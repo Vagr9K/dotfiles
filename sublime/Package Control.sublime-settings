@@ -21,9 +21,9 @@
 		"Markdown Preview",
 		"MarkdownEditing",
 		"Material Theme",
+		"Oceanic Next Color Scheme",
 		"Package Control",
 		"PackageResourceViewer",
-		"PHPUnit",
 		"Predawn",
 		"Predawn Monokai",
 		"Seti_UI",
@@ -34,12 +34,12 @@
 		"SublimeLinter-csslint",
 		"SublimeLinter-flake8",
 		"SublimeLinter-phpcs",
+		"tern_for_sublime",
 		"Theme - Afterglow",
 		"Theme - Asphalt",
 		"Theme - Brogrammer",
 		"Theme - Spacegray",
 		"Tomorrow Color Schemes",
-		"UnrealScriptIDE",
-		"Xdebug Client"
+		"UnrealScriptIDE"
 	]
 }
