@@ -15,11 +15,11 @@
       end_with_newline: true
   "atom-material-ui":
     colors:
-      abaseColor: "#ef5350"
-      accentColor: "#59fcff"
+      abaseColor: "#aad875"
+      accentColor: "#6f8853"
       genAccent: true
       paintCursor: true
-      predefinedColor: "Red"
+      predefinedColor: "Green"
     fonts:
       fontSize: 15
     tabs:
