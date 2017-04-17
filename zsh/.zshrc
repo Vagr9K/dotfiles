@@ -13,6 +13,9 @@ source "$HOME/.dotfiles/zsh/.zprofile"
 alias atom="atom-beta"
 alias apm="apm-beta"
 
+# Use ccache for building Android from source
+export USE_CCACHE=1
+
 # Ruby
 source "${ZDOTDIR:-$HOME}/external/ruby.zsh"
 
