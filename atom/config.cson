@@ -15,11 +15,11 @@
       end_with_newline: true
   "atom-material-ui":
     colors:
-      abaseColor: "#aad875"
-      accentColor: "#6f8853"
+      abaseColor: "#ef5350"
+      accentColor: "#59fcff"
       genAccent: true
       paintCursor: true
-      predefinedColor: "Green"
+      predefinedColor: "Red"
     fonts:
       fontSize: 15
     tabs:
@@ -90,7 +90,7 @@
     telemetryConsent: "no"
     themes: [
       "atom-material-ui"
-      "base16-tomorrow-dark-theme"
+      "base16-syntax"
     ]
   editor:
     fontFamily: "Source Code Pro Semibold"
@@ -109,6 +109,14 @@
   "git-plus":
     general:
       analytics: false
+  "js-hyperclick":
+    extensions: [
+      ".js"
+      ".json"
+      ".node"
+      ".jsx"
+    ]
+    jumpToImport: true
   "language-babel":
     autoIndentJSX: true
   linter:
@@ -133,13 +141,15 @@
     maxLineLength: 100
   "linter-stylelint":
     useStandard: true
+  "linter-ui-default":
+    showProviderName: true
   minimap:
     plugins:
       cursorline: true
       cursorlineDecorationsZIndex: 0
       "find-and-replace": true
       "find-and-replaceDecorationsZIndex": 0
-      "git-diff": true
+      "git-diff": false
       "git-diffDecorationsZIndex": 0
       "highlight-selected": true
       "highlight-selectedDecorationsZIndex": 0
