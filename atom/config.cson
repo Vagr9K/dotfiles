@@ -20,8 +20,7 @@
       genAccent: true
       paintCursor: true
       predefinedColor: "Red"
-    fonts:
-      fontSize: 15
+    fonts: {}
     tabs:
       compactTabs: true
       noTabMinWidth: true
@@ -82,6 +81,7 @@
       "docblockr"
       "linter-shellcheck"
       "emmet"
+      "language-gfm"
     ]
     packagesWithKeymapsDisabled: [
       "build"
@@ -119,10 +119,7 @@
     jumpToImport: true
   "language-babel":
     autoIndentJSX: true
-  linter:
-    errorPanelHeight: 23
-    lintOnFly: false
-    showErrorTabLine: true
+  linter: {}
   "linter-eslint":
     disableWhenNoEslintConfig: false
     fixOnSave: true
