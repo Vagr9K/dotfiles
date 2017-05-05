@@ -16,8 +16,7 @@
   "atom-material-ui":
     colors:
       abaseColor: "#ef5350"
-      accentColor: "#59fcff"
-      genAccent: true
+      accentColor: "#232a2a"
       paintCursor: true
       predefinedColor: "Red"
     fonts: {}
