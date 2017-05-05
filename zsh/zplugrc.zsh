@@ -1,5 +1,9 @@
+#Async library 
+zplug mafredri/zsh-async, from:github
+
 #Theme
-source "$HOME/.dotfiles/powerline/powerline.zsh"
+source "${ZDOTDIR:-$HOME}/config/powerlevel9k.zsh"
+zplug dritter/powerlevel9k, use:powerlevel9k.zsh-theme, from:github, as:theme, at:async_all_the_segments
 
 #Plugin declarations
 zplug 'zplug/zplug', hook-build:'zplug --self-manage'
