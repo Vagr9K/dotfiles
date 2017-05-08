@@ -1,8 +1,8 @@
-atom-beautify@0.29.23
+atom-beautify@0.29.24
 atom-material-ui@2.0.3
 atom-ternjs@0.18.3
 autoclose-html@0.23.0
-autocomplete-modules@1.6.9
+autocomplete-modules@1.6.10
 autocomplete-paths@1.0.5
 autocomplete-python@1.8.63
 base16-syntax@1.8.0
@@ -20,7 +20,7 @@ hyperclick@0.0.40
 intentions@1.1.2
 js-hyperclick@1.11.0
 js-refactor@0.7.5
-language-babel@2.58.0
+language-babel@2.60.0
 language-markdown@0.22.0
 linter@2.1.4
 linter-eslint@8.1.7
