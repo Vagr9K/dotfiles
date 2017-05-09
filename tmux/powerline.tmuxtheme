@@ -18,7 +18,7 @@ set -g status-left "#{?client_prefix,#[fg=colour255]#[bg=colour31]#[bold] #S #[f
 set -g status-right-bg colour233
 set -g status-right-fg colour243
 set -g status-right-length 100
-set -g status-right "#{net_speed}#[fg=colour236,bg=colour233]#[fg=colour255,bg=colour236] %H:%M #[fg=colour233,bg=colour236]#[fg=colour255,bg=colour233,bold] #{session_attached} #[fg=colour255,bg=colour233]#[fg=colour233,bg=colour255] #(whoami)@#[fg=colour232,bg=colour255,bold]#H "
+set -g status-right "#{net_speed} #[fg=colour236,bg=colour233]#[fg=colour255,bg=colour236] %H:%M #[fg=colour233,bg=colour236]#[fg=colour255,bg=colour233,bold] #{session_attached} #[fg=colour255,bg=colour233]#[fg=colour233,bg=colour255]  #(whoami)@#[fg=colour232,bg=colour255,bold]#H "
 
 # Window status
 set -g window-status-format "  #I#F  #W  "
