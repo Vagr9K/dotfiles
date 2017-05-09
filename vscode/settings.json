@@ -4,7 +4,6 @@
     "python.linting.pylintEnabled": false,
     "python.linting.flake8Enabled": true,
     "workbench.iconTheme": "material-icon-theme",
-    "workbench.colorTheme": "One Dark Pro",
     "editor.minimap.enabled": true,
     "files.autoSave": "off",
     "eslint.autoFixOnSave": true,
@@ -19,7 +18,7 @@
         "node_modules": true
     },
     "editor.wordWrap": "on",
-    "editor.formatOnSave": true,
+    "editor.formatOnSave": false,
     "editor.wordWrapColumn": 100,
     "telemetry.enableTelemetry": false,
     "telemetry.enableCrashReporter": false,
@@ -35,23 +34,8 @@
     "css.validate": false,
     "scss.validate": false,
     "stylelint.config": {
-        "rules": {
-            "block-no-empty": null,
-            "color-no-invalid-hex": true,
-            "comment-empty-line-before": ["always", {
-                "ignore": ["stylelint-command", "after-comment"]
-            }],
-            "declaration-colon-space-after": "always",
-            "indentation": ["tab", {
-                "except": ["value"]
-            }],
-            "max-empty-lines": 2,
-            "rule-nested-empty-line-before": ["always", {
-                "except": ["first-nested"],
-                "ignore": ["after-comment"]
-            }],
-            "unit-whitelist": ["em", "rem", "%", "s"]
-        }
-
-    }
+        "extends": "stylelint-config-standard",
+        "rules": {}
+    },
+    "workbench.colorTheme": "One Dark Pro"
 }
