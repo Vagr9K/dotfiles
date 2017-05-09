@@ -1,0 +1,57 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "python.venvPath": "/home/ruben/.virtualenvs",
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "One Dark Pro",
+    "editor.minimap.enabled": true,
+    "files.autoSave": "off",
+    "eslint.autoFixOnSave": true,
+    "editor.fontFamily": "Source Code Pro Semibold",
+    "editor.renderWhitespace": "all",
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "node_modules": true
+    },
+    "editor.wordWrap": "on",
+    "editor.formatOnSave": true,
+    "editor.wordWrapColumn": 100,
+    "telemetry.enableTelemetry": false,
+    "telemetry.enableCrashReporter": false,
+    "terminal.integrated.fontFamily": "SauceCodePro Nerd Font Semi-Bold",
+    "eslint.run": "onSave",
+    "shellcheck.run": "onSave",
+    "window.menuBarVisibility": "toggle",
+    "editor.minimap.renderCharacters": false,
+    "ruby.lint": {
+        "rubocop": true
+    },
+    "stylelint.enable": true,
+    "css.validate": false,
+    "scss.validate": false,
+    "stylelint.config": {
+        "rules": {
+            "block-no-empty": null,
+            "color-no-invalid-hex": true,
+            "comment-empty-line-before": ["always", {
+                "ignore": ["stylelint-command", "after-comment"]
+            }],
+            "declaration-colon-space-after": "always",
+            "indentation": ["tab", {
+                "except": ["value"]
+            }],
+            "max-empty-lines": 2,
+            "rule-nested-empty-line-before": ["always", {
+                "except": ["first-nested"],
+                "ignore": ["after-comment"]
+            }],
+            "unit-whitelist": ["em", "rem", "%", "s"]
+        }
+
+    }
+}
