@@ -19,6 +19,7 @@ source "${ZDOTDIR:-$HOME}/config/utility.zsh"
 source "${ZDOTDIR:-$HOME}/config/editor.zsh"
 source "${ZDOTDIR:-$HOME}/config/history.zsh"
 source "${ZDOTDIR:-$HOME}/config/history-substring-search.zsh"
+source "${ZDOTDIR:-$HOME}/config/syntax-highlighting.zsh"
 source "${ZDOTDIR:-$HOME}/config/completion.zsh"
 
 #Load plugins
