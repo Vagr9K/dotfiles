@@ -1,3 +1,6 @@
+# Init zplug
+source "${ZDOTDIR:-$HOME}/zplug/init.zsh"
+
 #Async library 
 zplug mafredri/zsh-async, from:github
 

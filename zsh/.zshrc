@@ -1,7 +1,4 @@
-# Init zplug
-source "${ZDOTDIR:-$HOME}/zplug/init.zsh"
-
-# Load plugins
+# Load zplug
 source "${ZDOTDIR:-$HOME}/zplugrc.zsh"
 
 # Set Tmuxinator alias
@@ -9,9 +6,8 @@ alias mux="tmuxinator start"
 # Fix $PATH
 source "$HOME/.dotfiles/zsh/.zprofile"
 
-# Set Atom aliases
-alias atom="atom-beta"
-alias apm="apm-beta"
+# Load aliases
+source "${ZDOTDIR:-$HOME}/aliases/aliases.zsh"
 
 # Use ccache for building Android from source
 export USE_CCACHE=1
