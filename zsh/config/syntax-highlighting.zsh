@@ -8,13 +8,15 @@ BLUE=blue
 # Declare variable
 typeset -A ZSH_HIGHLIGHT_STYLES
 
+# Misc
+ZSH_HIGHLIGHT_STYLES[path]='bold'
+
 # Main highlighter
 ZSH_HIGHLIGHT_STYLES[unknown-token]="fg=red,bold"
 ZSH_HIGHLIGHT_STYLES[reserved-word]="fg=$YELLOW"
 ZSH_HIGHLIGHT_STYLES[suffix-alias]="fg=$GREEN,underline"
 ZSH_HIGHLIGHT_STYLES[precommand]="fg=$GREEN,underline"
 ZSH_HIGHLIGHT_STYLES[commandseparator]="none"
-ZSH_HIGHLIGHT_STYLES[path]="underline"
 ZSH_HIGHLIGHT_STYLES[path_pathseparator]="
 ZSH_HIGHLIGHT_STYLES[path_prefix_pathseparator]="
 ZSH_HIGHLIGHT_STYLES[globbing]="fg=$BLUE"

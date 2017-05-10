@@ -27,6 +27,3 @@ source "${ZDOTDIR:-$HOME}/config/completion.zsh"
 
 #Load plugins
 zplug load
-
-#Configure after loading
-source "${ZDOTDIR:-$HOME}/config/highlighting.zsh"
