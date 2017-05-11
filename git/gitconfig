@@ -4,12 +4,221 @@
 [color]
   ui = true
 [alias]
+  # Misc
   snapshot = !git stash save "snapshot: $(date)" && git stash apply "stash@{0}"
-  snapshots = !git stash list --grep snapshot
+  ls-snapshots = !git stash list --grep snapshot
   recent-branches = !git for-each-ref --count=15 --sort=-committerdate refs/heads/ --format='%(refname:short)'
-  lg1 = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
-  lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
-  lg = !"git lg1"
+
+  # Branch (b)
+  b=branch
+  ba=branch --all --verbose --verbose
+  bl=branch --verbose --verbose
+  bc=checkout -b
+  bx=branch --delete
+  bX=branch --delete --force
+  bm=branch --move
+  bM=branch --move --force
+  bs=show-branch
+  bS=show-branch --all
+
+  # Commit (c)
+  c=commit
+  ca=commit --all
+  cm=commit --message
+  cam=commit --all --message
+  co=checkout
+  cop=checkout --patch
+  cf=commit --amend --reuse-message HEAD
+  chp=cherry-pick
+  cr=revert
+  cR=reset "HEAD^"
+  cs=show
+
+  # Conflict (C)
+  Cl=!git --no-pager diff --name-only --diff-filter=U
+  Ca=!git add $(git Cl)
+  Cm=!git mergetool $(git Cl)
+  Co=checkout --ours
+  CO=!git Co $(git Cl)
+  Ct=checkout --theirs
+  CT=!git Ct $(git Cl)
+
+  # Data (d)
+  d=ls-files
+  dc=ls-files --cached
+  dd=ls-files --deleted
+  dx=ls-files --deleted
+  dm=ls-files --modified
+  do=ls-files --other --exclude-standard
+  dk=ls-files --killed
+  di=!git status --porcelain --short --ignored | sed -n '"s/^!! //p"'
+
+  # Fetch (f)
+  f=fetch
+  fa=fetch --all
+  fc=clone
+  fp=pull
+  fr=pull --rebase
+  fpr=pull --rebase
+
+  # Flow (F)
+  Fi=flow init
+  Ff=flow feature
+  Fb=flow bugfix
+  Fr=flow release
+  Fh=flow hotfix
+  Fs=flow support
+
+  Ffl=flow feature list
+  Ffs=flow feature start
+  Fff=flow feature finish
+  Ffpub=flow feature publish
+  Fft=flow feature track
+  Ffd=flow feature diff
+  Ffr=flow feature rebase
+  Ffc=flow feature checkout
+  Ffp=flow feature pull
+  Ffx=flow feature delete
+
+  Fbl=flow bugfix list
+  Fbs=flow bugfix start
+  Fbf=flow bugfix finish
+  Fbpub=flow bugfix publish
+  Fbt=flow bugfix track
+  Fb=flow bugfix diff
+  Fbr=flow bugfix rebase
+  Fbc=flow bugfix checkout
+  Fbp=flow bugfix pull
+  Fbx=flow bugfix delete
+
+  Fll=flow release list
+  Fls=flow release start
+  Flf=flow release finish
+  Flpub=flow release publish
+  Flt=flow release track
+  Fld=flow release diff
+  Flr=flow release rebase
+  Flc=flow release checkout
+  Flp=flow release pull
+  Flx=flow release delete
+
+  Fhl=flow hotfix list
+  Fhs=flow hotfix start
+  Fhf=flow hotfix finish
+  Fhpub=flow hotfix publish
+  Fht=flow hotfix track
+  Fhd=flow hotfix diff
+  Fhr=flow hotfix rebase
+  Fhc=flow hotfix checkout
+  Fhp=flow hotfix pull
+  Fhx=flow hotfix delete
+
+  Fsl=flow support list
+  Fss=flow support start
+  Fsf=flow support finish
+  Fspub=flow support publish
+  Fst=flow support track
+  Fsd=flow support diff
+  Fsr=flow support rebase
+  Fsc=flow support checkout
+  Fsp=flow support pull
+  Fsx=flow support delete
+
+  # Grep (g)
+  g=grep
+  gi=grep --ignore-case
+  gl=grep --files-with-matches
+  gL=grep --files-without-matches
+  gv=grep --invert-match
+  gw=grep --word-regexp
+
+  # Index (i)
+  ia=add
+  iA=add --patch
+  iu=add --update
+  id=diff --no-ext-diff --cached
+  iD=diff --no-ext-diff --cached --word-diff
+  ii=update-index --assume-unchanged
+  iI=update-index --no-assume-unchanged
+  ir=reset
+  iR=reset --patch
+  ix=rm -r --cached
+  iX=rm -rf --cached
+
+  # Log (l)
+  l1 = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+  l2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
+  l = !git l1
+
+  # Merge (m)
+  m=merge
+  mC=merge --no-commit
+  mf=merge --ff
+  mF=merge --no-ff
+  ma=merge --abort
+  mt=mergetool
+
+  # Push (p)
+  p=push
+  pf=push --force-with-lease
+  pF=push --force
+  pa=push --all
+  pA=push --all && git push --tags
+  pt=push --tags
+  pc=!git push --set-upstream origin "$(git-branch-current 2> /dev/null)"
+  pp=!git pull origin "$(git-branch-current 2> /dev/null)" && git push origin "$(git-branch-current 2> /dev/null)"
+
+  # Rebase (r)
+  r=rebase
+  ra=rebase --abort
+  rc=rebase --continue
+  ri=rebase --interactive
+  rs=rebase --skip
+
+  # Remote (R)
+  R=remote
+  Rl=remote --verbose
+  Ra=remote add
+  Rx=remote rm
+  Rr=remote rename
+  Ru=remote update
+  Rp=remote prune
+  Rs=remote show
+
+  # Stash (s)
+  s=stash
+  sa=stash apply
+  sx=stash drop
+  sl=stash list
+  sd=stash show --patch --stat
+  sp=stash pop
+  ss=stash save
+  ssu=stash save --include-untracked
+  spI=stash save --patch --no-keep-index
+  sui=stash save --include-untracked --keep-index
+
+  # Submodule (S)
+  S=submodule
+  Sa=submodule add
+  Sf=submodule foreach
+  Si=submodule init
+  Sir=submodule update --init --recursive
+  SI=submodule update --init --recursive
+  Ss=submodule status
+  Ssyn=submodule sync
+  Supd=submodule foreach git pull origin master
+
+  # Working Copy (w)
+  ws=status
+  wd=diff --no-ext-diff
+  wD=diff --no-ext-diff --word-diff
+  wr=reset --soft
+  wR=reset --hard
+  wc=clean -n
+  wC=clean -f
+  wCd=clean -df
+  wx=rm -r
+  wX=rm -rf
 [push]
   default = upstream
 [core]
