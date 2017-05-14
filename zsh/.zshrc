@@ -1,3 +1,6 @@
+# Set TERM early for guake
+export TERM="xterm-256color"
+
 # Load zplug
 source "${ZDOTDIR:-$HOME}/zplugrc.zsh"
 
