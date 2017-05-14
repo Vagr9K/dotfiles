@@ -1,16 +1,16 @@
 <?xml version="1.0"?>
 <gconf>
-	<entry name="color" mtime="1494009909" type="string">
+	<entry name="color" mtime="1494775077" type="string">
 		<stringvalue>#9393a1a1a1a1</stringvalue>
 	</entry>
-	<entry name="style" mtime="1493995466" type="string">
-		<stringvalue>SauceCodePro Nerd Font Semi-Bold 10</stringvalue>
+	<entry name="style" mtime="1494775063" type="string">
+		<stringvalue>SauceCodePro Nerd Font Semi-Bold 11</stringvalue>
 	</entry>
-	<entry name="palette_name" mtime="1494009840" type="string">
+	<entry name="palette_name" mtime="1494775014" type="string">
 		<stringvalue>Solarized Dark</stringvalue>
 	</entry>
-	<entry name="palette" mtime="1494009909" type="string">
+	<entry name="palette" mtime="1494775077" type="string">
 		<stringvalue>#00002b2b3636:#dcdc32322f2f:#858599990000:#b5b589890000:#26268b8bd2d2:#6c6c7171c4c4:#2a2aa1a19898:#9393a1a1a1a1:#65657b7b8383:#dcdc32322f2f:#858599990000:#b5b589890000:#26268b8bd2d2:#6c6c7171c4c4:#2a2aa1a19898:#fdfdf6f6e3e3</stringvalue>
 	</entry>
-	<entry name="allow_bold" mtime="1494009840" type="bool" value="true"/>
+	<entry name="allow_bold" mtime="1494775014" type="bool" value="true"/>
 </gconf>
