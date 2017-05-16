@@ -44,5 +44,6 @@
     },
     "[c]": {
         "editor.quickSuggestions": false
-    }
+    },
+    "javascript.implicitProjectConfig.checkJs": true
 }
