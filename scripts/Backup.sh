@@ -22,7 +22,6 @@ then
         GDriveDir=$2
     fi
 fi
-HOME=/home/ruben
 CurDir=$(dirname "$0")
 if [ "$CurDir" = "." ]
 then

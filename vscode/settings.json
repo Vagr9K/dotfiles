@@ -1,6 +1,6 @@
 // Place your settings in this file to overwrite the default settings
 {
-    "python.venvPath": "/home/ruben/.virtualenvs",
+    "python.venvPath": "~/.virtualenvs",
     "python.linting.pylintEnabled": false,
     "python.linting.flake8Enabled": true,
     "workbench.iconTheme": "material-icon-theme",

@@ -85,7 +85,7 @@
     packagesWithKeymapsDisabled: [
       "build"
     ]
-    projectHome: "/home/ruben/Git"
+    projectHome: "~/Git"
     telemetryConsent: "no"
     themes: [
       "atom-material-ui"
@@ -123,7 +123,7 @@
     disableWhenNoEslintConfig: false
     fixOnSave: true
   "linter-flake8":
-    executablePath: "/home/ruben/.local/bin/flake8"
+    executablePath: "~/.local/bin/flake8"
     ignoreErrorCodes: [
       "D100"
       "D101"

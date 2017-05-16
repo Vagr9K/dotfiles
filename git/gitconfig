@@ -1,6 +1,5 @@
-[user]
-	name = Ruben Harutyunyan
-	email = harutyunyan.ruben@gmail.com
+[include]
+  path=.dotfiles/git/gitconfig.local
 [color]
   ui = true
 [alias]

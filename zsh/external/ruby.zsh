@@ -1,5 +1,5 @@
 # Set a temporary default path for ruby until full load occurs.
-TMP_SYSTEM_RUBY_PATH="/home/ruben/.gem/ruby/2.4.0"
+TMP_SYSTEM_RUBY_PATH="$HOME/.gem/ruby/2.4.0"
 PATH="$TMP_SYSTEM_RUBY_PATH/bin:$PATH"
 
 function rbenv_loader(){
