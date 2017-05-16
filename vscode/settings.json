@@ -37,5 +37,12 @@
         "extends": "stylelint-config-standard",
         "rules": {}
     },
-    "workbench.colorTheme": "One Dark Pro"
+    "workbench.colorTheme": "One Dark Pro",
+    "editor.fontSize": 13,
+    "[cpp]": {
+        "editor.quickSuggestions": false
+    },
+    "[c]": {
+        "editor.quickSuggestions": false
+    }
 }
