@@ -45,5 +45,7 @@
     "[c]": {
         "editor.quickSuggestions": false
     },
-    "javascript.implicitProjectConfig.checkJs": true
+    "javascript.implicitProjectConfig.checkJs": true,
+    "python.formatting.provider": "yapf",
+    "python.formatting.formatOnSave": true
 }
