@@ -41,6 +41,9 @@ path=(
    $path
 )
 
+# Enable ssh-agent (based on systemd service)
+export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
+
 # Set Less options. Mouse enabled.
 export LESS='-g -i -M -R -S -w -z-4'
 
