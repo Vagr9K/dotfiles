@@ -96,6 +96,9 @@
   rs=rebase --skip
 
   # Stash (s)
+  stsh = stash --keep-index
+  staash = stash --include-untracked
+  staaash = stash --all
   s=stash
   sa=stash apply
   sx=stash drop
