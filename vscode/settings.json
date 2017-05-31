@@ -39,12 +39,6 @@
     },
     "workbench.colorTheme": "One Dark Pro",
     "editor.fontSize": 13,
-    "[cpp]": {
-        "editor.quickSuggestions": false
-    },
-    "[c]": {
-        "editor.quickSuggestions": false
-    },
     "javascript.implicitProjectConfig.checkJs": true,
     "python.formatting.provider": "yapf",
     "python.formatting.formatOnSave": true
