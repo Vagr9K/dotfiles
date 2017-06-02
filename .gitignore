@@ -11,10 +11,13 @@ zsh/.zcompcache*
 zsh/.zhistory
 # Ignore compiled files
 zsh/**/*.zwc
-#Same as above for root zsh
-zsh-root/.zcomp*
-zsh-root/.zsh_history
-zsh-root/.zdirs
+#Same as above for mini zsh
+zsh-mini/.zcompdump*
+zsh-mini/.zcompcache*
+zsh-mini/.zcomp*
+zsh-mini/.zhistory
+zsh-mini/.zdirs
+zsh-mini/.zprezto
 #Ignore vim plugins except Vundle
 vim/bundle/*
 !vim/bundle/Vundle.vim
