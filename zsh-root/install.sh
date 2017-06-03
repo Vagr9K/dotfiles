@@ -1,6 +1,6 @@
 #!/usr/bin/env zsh
 printf "${Green}Installing root zsh preferences.\n"
-ConfigFolder="$HOME/.dotfiles/zsh-mini"
+ConfigFolder="$HOME/.dotfiles/zsh-root"
 EnvPath="$ConfigFolder/.zshenv"
 EnvLink="/root/.zshenv"
 #
