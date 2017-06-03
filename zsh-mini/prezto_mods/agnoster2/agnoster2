@@ -131,16 +131,6 @@ prompt_status() {
   [[ -n "$symbols" ]] && prompt_segment $PRIMARY_FG default " $symbols "
 }
 
-## Virtualenv display
-prompt_virtualenv() {
-  if [ ! -z "$python_info[virtualenv]" -a "$python_info[virtualenv]" != "" ]; then
-  CURRENT_BG="039"
-  prompt_start
-  prompt_segment "039" $PRIMARY_FG " $VIRENV "
-  print -Pn '$python_info[virtualenv] '
-  fi
-}
-
 
 ## Main prompt
 prompt_left() {
@@ -155,7 +145,6 @@ prompt_left() {
 
 prompt_right() {
   RETVAL=$?
-  prompt_virtualenv
 }
 
 prompt_agnoster_precmd() {
@@ -179,9 +168,6 @@ prompt_agnoster_setup() {
   zstyle ':vcs_info:*' check-for-changes false
   zstyle ':vcs_info:git*' formats '%b'
   zstyle ':vcs_info:git*' actionformats '%b (%a)'
-
-  # %v - virtualenv name.
-  zstyle ':prezto:module:python:info:virtualenv' format '%v'
 }
 
 prompt_agnoster_setup "$@"
