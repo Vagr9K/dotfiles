@@ -10,9 +10,6 @@ setopt GLOB_DOTS
 # Extended glob operator
 setopt EXTENDED_GLOB
 
-# Remove overwrite warnings
-setopt clobber
-
 # mkdir
 alias mkdir='mkdir -p'
 
