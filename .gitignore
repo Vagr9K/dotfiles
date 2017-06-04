@@ -1,10 +1,8 @@
 #Ignore local settings
 *.local
 local/*
-#Ignore zplug and changes to that folder
-zsh/zplug
+#Ignore antigen-bundles and changes to that folder
 zsh/antigen-bundles
-zsh/.zprezto
 #Ignore compiled autocomplete dump
 zsh/.zcompdump*
 zsh/.zcompcache*
