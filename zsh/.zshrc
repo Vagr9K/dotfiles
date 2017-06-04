@@ -1,8 +1,8 @@
 # Set TERM early for guake
 export TERM="xterm-256color"
 
-# Load zplug
-source "${ZDOTDIR:-$HOME}/zplugrc.zsh"
+# Load package manager
+source "${ZDOTDIR:-$HOME}/packages.zsh"
 
 # Set Tmuxinator alias
 alias mux="tmuxinator start"
