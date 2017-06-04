@@ -10,6 +10,12 @@ setopt GLOB_DOTS
 # Extended glob operator
 setopt EXTENDED_GLOB
 
+# Add overwrite warnings
+unsetopt CLOBBER
+
+# Pipe to multiple files
+setopt MULTIOS
+
 # mkdir
 alias mkdir='mkdir -p'
 
