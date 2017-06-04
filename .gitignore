@@ -46,5 +46,3 @@ atom/electron
 guake/style/%gconf.xml
 #Ignore powerline symlinks
 powerline/powerline.zsh
-#Ignore local machine specific files
-*.local
