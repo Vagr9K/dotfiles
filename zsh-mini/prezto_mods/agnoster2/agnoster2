@@ -149,9 +149,6 @@ prompt_right() {
 
 prompt_agnoster_precmd() {
   vcs_info
-  if (( $+functions[python-info] )); then
-    python-info
-  fi
   PROMPT='%{%f%b%k%}$(prompt_left) '
   RPROMPT='%{%f%b%k%}$(prompt_right) '
 }
