@@ -4,6 +4,10 @@ TmuxPath="$HOME/.dotfiles/tmux/tmux.conf"
 printf "${Green}Symlinking .tmux.conf.${Red}\n"
 ln -s "$TmuxPath" "$TmuxLink"
 
+#Update submodule repositories
+echo "Installing plugins."
+git submodule update --init --recursive
+
 printf "${Green}Installing Tmuxinator's preferences.${Red}\n"
 echo "${Yellow}Do you wish to remove Tmuxinator preferences folder?"
 select yn in "Yes" "No"; do
