@@ -44,5 +44,3 @@ atom/.npm
 atom/electron
 #Ignore Guake gconf "mtime" file.
 guake/style/%gconf.xml
-#Ignore powerline symlinks
-powerline/powerline.zsh
