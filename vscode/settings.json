@@ -18,7 +18,7 @@
         "node_modules": true
     },
     "editor.wordWrap": "on",
-    "editor.formatOnSave": false,
+    "editor.formatOnSave": true,
     "editor.wordWrapColumn": 100,
     "telemetry.enableTelemetry": false,
     "telemetry.enableCrashReporter": false,
@@ -33,13 +33,26 @@
     "stylelint.enable": true,
     "css.validate": false,
     "scss.validate": false,
-    "stylelint.config": {
-        "extends": "stylelint-config-standard",
-        "rules": {}
-    },
     "workbench.colorTheme": "One Dark Pro",
     "editor.fontSize": 13,
     "javascript.implicitProjectConfig.checkJs": true,
     "python.formatting.provider": "yapf",
-    "python.formatting.formatOnSave": true
+    "python.formatting.formatOnSave": true,
+    "extensions.autoUpdate": false,
+    "beautify.language": {
+        "js": {
+            "type": [
+                "json"
+            ],
+            "filename": [
+                ".jshintrc",
+                ".jsbeautify"
+            ]
+        },
+        "css": [],
+        "html": [
+            "htm",
+            "html"
+        ]
+    }
 }
