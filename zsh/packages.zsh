@@ -10,6 +10,7 @@ source "${ZDOTDIR:-$HOME}/config/history.zsh"
 source "${ZDOTDIR:-$HOME}/config/directory.zsh"
 source "${ZDOTDIR:-$HOME}/config/history-substring-search.zsh"
 source "${ZDOTDIR:-$HOME}/config/syntax-highlighting.zsh"
+source "${ZDOTDIR:-$HOME}/config/nvm.zsh"
 source "${ZDOTDIR:-$HOME}/config/completion.zsh"
 
 # Antigen settings
