@@ -54,5 +54,6 @@
             "htm",
             "html"
         ]
-    }
+    },
+    "typescript.disableAutomaticTypeAcquisition": false
 }

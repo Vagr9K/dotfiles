@@ -1,3 +1,4 @@
+AndrsDC.base16-themes
 DavidAnson.vscode-markdownlint
 EditorConfig.EditorConfig
 HookyQR.beautify
@@ -11,7 +12,8 @@ donjayamanne.python
 formulahendry.auto-close-tag
 formulahendry.auto-rename-tag
 joelday.docthis
-joshpeng.sublime-babel-vscode
+kleber-swf.ocean-dark-extended
+leizongmin.node-module-intellisense
 mrmlnc.vscode-stylefmt
 ms-vscode.sublime-keybindings
 rebornix.Ruby
