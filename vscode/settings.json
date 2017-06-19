@@ -15,7 +15,19 @@
         "**/.hg": true,
         "**/CVS": true,
         "**/.DS_Store": true,
-        "node_modules": true
+        "**/node_modules": true,
+        "**/.zwc": true,
+        "**/dist*": true
+    },
+    "search.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/node_modules": true,
+        "**/.zwc": true,
+        "**/dist*": true
     },
     "editor.wordWrap": "on",
     "editor.formatOnSave": true,
@@ -55,5 +67,6 @@
             "html"
         ]
     },
-    "typescript.disableAutomaticTypeAcquisition": false
+    "typescript.disableAutomaticTypeAcquisition": false,
+    "javascript.format.enable": false
 }
