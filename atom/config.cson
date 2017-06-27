@@ -75,10 +75,6 @@
       ]
     disabledPackages: [
       "metrics"
-      "linter-rubocop"
-      "django-templates"
-      "docblockr"
-      "linter-shellcheck"
       "emmet"
       "language-gfm"
     ]
@@ -138,6 +134,7 @@
   "linter-stylelint":
     useStandard: true
   "linter-ui-default":
+    showPanel: true
     showProviderName: true
   minimap:
     plugins:
