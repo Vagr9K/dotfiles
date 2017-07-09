@@ -17,7 +17,8 @@
         "**/.DS_Store": true,
         "**/node_modules": true,
         "**/.zwc": true,
-        "**/dist*": true
+        "**/dist*": true,
+        "**/.cache": true
     },
     "search.exclude": {
         "**/.git": true,
@@ -27,7 +28,8 @@
         "**/.DS_Store": true,
         "**/node_modules": true,
         "**/.zwc": true,
-        "**/dist*": true
+        "**/dist*": true,
+        "**/.cache": true
     },
     "editor.wordWrap": "on",
     "editor.formatOnSave": true,
@@ -68,5 +70,27 @@
         ]
     },
     "typescript.disableAutomaticTypeAcquisition": false,
-    "javascript.format.enable": false
+    "javascript.format.enable": false,
+    "auto-close-tag.SublimeText3Mode": true,
+    "auto-close-tag.fullMode": true,
+    "editor.formatOnPaste": true,
+    "editor.wordBasedSuggestions": true,
+    "editor.cursorBlinking": "smooth",
+    "editor.fontLigatures": true,
+    "editor.showFoldingControls": "always",
+    "editor.matchBrackets": true,
+    "editor.accessibilitySupport": "off",
+    "workbench.colorCustomizations": {
+        "tab.activeBackground": "#282c34",
+        "activityBar.background": "#282c34",
+        "editorGroup.background": "#282c34",
+        "sideBar.background": "#282c34"
+    },
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "search.useIgnoreFilesByDefault": true,
+    "search.quickOpen.includeSymbols": true,
+    "html.suggest.angular1": false,
+    "path-intellisense.extensionOnImport": true,
+    "path-intellisense.autoSlashAfterDirectory": true
 }
