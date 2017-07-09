@@ -134,7 +134,6 @@
   "linter-stylelint":
     useStandard: true
   "linter-ui-default":
-    showPanel: true
     showProviderName: true
   minimap:
     plugins:
