@@ -13,8 +13,10 @@ bungcip.better-toml
 casualjim.gotemplate
 christian-kohler.path-intellisense
 dbaeumer.vscode-eslint
+donjayamanne.githistory
 donjayamanne.python
 ecmel.vscode-html-css
+felipecaputo.git-project-manager
 formulahendry.auto-close-tag
 formulahendry.auto-rename-tag
 kleber-swf.ocean-dark-extended
@@ -23,7 +25,6 @@ mkaufman.HTMLHint
 mrmlnc.vscode-stylefmt
 ms-vscode.sublime-keybindings
 msjsdiag.debugger-for-chrome
-rebornix.Ruby
 shinnn.stylelint
 vincaslt.highlight-matching-tag
 zhuangtongfa.Material-theme
