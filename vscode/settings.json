@@ -99,5 +99,7 @@
         "borderColor": "white"
     },
     "highlight-matching-tag.leftStyle": null,
-    "highlight-matching-tag.rightStyle": null
+    "highlight-matching-tag.rightStyle": null,
+    "editor.autoIndent": true,
+    "editor.minimap.showSlider": "always"
 }
