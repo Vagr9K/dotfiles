@@ -38,7 +38,6 @@
     "telemetry.enableCrashReporter": false,
     "terminal.integrated.fontFamily": "SauceCodePro Nerd Font Semi-Bold",
     "eslint.run": "onSave",
-    "shellcheck.run": "onSave",
     "window.menuBarVisibility": "toggle",
     "editor.minimap.renderCharacters": false,
     "ruby.lint": {
@@ -92,5 +91,13 @@
     "search.quickOpen.includeSymbols": true,
     "html.suggest.angular1": false,
     "path-intellisense.extensionOnImport": true,
-    "path-intellisense.autoSlashAfterDirectory": true
+    "path-intellisense.autoSlashAfterDirectory": true,
+    "highlight-matching-tag.highlightSelfClosing": true,
+    "highlight-matching-tag.style": {
+        "borderWidth": "0 0 1px 0",
+        "borderStyle": "dotted",
+        "borderColor": "white"
+    },
+    "highlight-matching-tag.leftStyle": null,
+    "highlight-matching-tag.rightStyle": null
 }
