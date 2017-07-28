@@ -1,113 +1,102 @@
-// Place your settings in this file to overwrite the default settings
 {
-    "python.venvPath": "~/.virtualenvs",
-    "python.linting.pylintEnabled": false,
-    "python.linting.flake8Enabled": true,
-    "workbench.iconTheme": "material-icon-theme",
-    "editor.minimap.enabled": true,
-    "files.autoSave": "off",
-    "eslint.autoFixOnSave": true,
-    "editor.fontFamily": "Source Code Pro Semibold",
-    "editor.renderWhitespace": "all",
-    "files.exclude": {
-        "**/.git": true,
-        "**/.svn": true,
-        "**/.hg": true,
-        "**/CVS": true,
-        "**/.DS_Store": true,
-        "**/node_modules": true,
-        "**/.zwc": true,
-        "**/dist*": true,
-        "**/.cache": true
+  "python.venvPath": "~/.virtualenvs",
+  "python.linting.pylintEnabled": false,
+  "python.linting.flake8Enabled": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.minimap.enabled": true,
+  "files.autoSave": "off",
+  "eslint.autoFixOnSave": false,
+  "editor.fontFamily": "Source Code Pro Semibold",
+  "editor.renderWhitespace": "all",
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/node_modules": true,
+    "**/.zwc": true,
+    "**/dist*": true,
+    "**/.cache": true,
+    "**/public": true
+  },
+  "search.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/node_modules": true,
+    "**/.zwc": true,
+    "**/dist*": true,
+    "**/.cache": true,
+    "**/public": true
+  },
+  "editor.wordWrap": "on",
+  "editor.formatOnSave": true,
+  "editor.wordWrapColumn": 100,
+  "telemetry.enableTelemetry": false,
+  "telemetry.enableCrashReporter": false,
+  "terminal.integrated.fontFamily": "SauceCodePro Nerd Font Semi-Bold",
+  "eslint.run": "onSave",
+  "window.menuBarVisibility": "toggle",
+  "editor.minimap.renderCharacters": false,
+  "ruby.lint": {
+    "rubocop": true
+  },
+  "stylelint.enable": true,
+  "css.validate": false,
+  "scss.validate": false,
+  "workbench.colorTheme": "One Dark Pro",
+  "editor.fontSize": 13,
+  "javascript.implicitProjectConfig.checkJs": true,
+  "python.formatting.provider": "yapf",
+  "python.formatting.formatOnSave": true,
+  "extensions.autoUpdate": false,
+  "beautify.language": {
+    "js": {
+      "type": ["json"],
+      "filename": [".jshintrc", ".jsbeautify"]
     },
-    "search.exclude": {
-        "**/.git": true,
-        "**/.svn": true,
-        "**/.hg": true,
-        "**/CVS": true,
-        "**/.DS_Store": true,
-        "**/node_modules": true,
-        "**/.zwc": true,
-        "**/dist*": true,
-        "**/.cache": true
-    },
-    "editor.wordWrap": "on",
-    "editor.formatOnSave": true,
-    "editor.wordWrapColumn": 100,
-    "telemetry.enableTelemetry": false,
-    "telemetry.enableCrashReporter": false,
-    "terminal.integrated.fontFamily": "SauceCodePro Nerd Font Semi-Bold",
-    "eslint.run": "onSave",
-    "window.menuBarVisibility": "toggle",
-    "editor.minimap.renderCharacters": false,
-    "ruby.lint": {
-        "rubocop": true
-    },
-    "stylelint.enable": true,
-    "css.validate": false,
-    "scss.validate": false,
-    "workbench.colorTheme": "One Dark Pro",
-    "editor.fontSize": 13,
-    "javascript.implicitProjectConfig.checkJs": true,
-    "python.formatting.provider": "yapf",
-    "python.formatting.formatOnSave": true,
-    "extensions.autoUpdate": false,
-    "beautify.language": {
-        "js": {
-            "type": [
-                "json"
-            ],
-            "filename": [
-                ".jshintrc",
-                ".jsbeautify"
-            ]
-        },
-        "css": [],
-        "html": [
-            "htm",
-            "html"
-        ]
-    },
-    "typescript.disableAutomaticTypeAcquisition": false,
-    "javascript.format.enable": false,
-    "auto-close-tag.SublimeText3Mode": true,
-    "auto-close-tag.fullMode": true,
-    "editor.formatOnPaste": true,
-    "editor.wordBasedSuggestions": true,
-    "editor.cursorBlinking": "smooth",
-    "editor.fontLigatures": true,
-    "editor.showFoldingControls": "always",
-    "editor.matchBrackets": true,
-    "editor.accessibilitySupport": "off",
-    "workbench.colorCustomizations": {
-        "tab.activeBackground": "#282c34",
-        "activityBar.background": "#282c34",
-        "editorGroup.background": "#282c34",
-        "sideBar.background": "#282c34"
-    },
-    "files.insertFinalNewline": true,
-    "files.trimTrailingWhitespace": true,
-    "search.useIgnoreFilesByDefault": true,
-    "search.quickOpen.includeSymbols": true,
-    "html.suggest.angular1": false,
-    "path-intellisense.extensionOnImport": true,
-    "path-intellisense.autoSlashAfterDirectory": true,
-    "highlight-matching-tag.highlightSelfClosing": true,
-    "highlight-matching-tag.style": {
-        "borderWidth": "0 0 1px 0",
-        "borderStyle": "dotted",
-        "borderColor": "white"
-    },
-    "highlight-matching-tag.leftStyle": null,
-    "highlight-matching-tag.rightStyle": null,
-    "editor.autoIndent": true,
-    "editor.minimap.showSlider": "always",
-    "gitProjectManager.baseProjectsFolders": [
-        "~/Git/"
-    ],
-    "gitProjectManager.ignoredFolders": [
-        "node_modules"
-    ],
-    "gitProjectManager.maxDepthRecursion": 1,
-    "gitProjectManager.searchInsideProjects": false
+    "css": [],
+    "html": ["htm", "html"]
+  },
+  "typescript.disableAutomaticTypeAcquisition": false,
+  "javascript.format.enable": false,
+  "auto-close-tag.SublimeText3Mode": true,
+  "auto-close-tag.fullMode": true,
+  "editor.formatOnPaste": true,
+  "editor.wordBasedSuggestions": true,
+  "editor.cursorBlinking": "smooth",
+  "editor.fontLigatures": true,
+  "editor.showFoldingControls": "always",
+  "editor.matchBrackets": true,
+  "editor.accessibilitySupport": "off",
+  "workbench.colorCustomizations": {
+    "tab.activeBackground": "#282c34",
+    "activityBar.background": "#282c34",
+    "editorGroup.background": "#282c34",
+    "sideBar.background": "#282c34"
+  },
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "search.useIgnoreFilesByDefault": true,
+  "search.quickOpen.includeSymbols": true,
+  "html.suggest.angular1": false,
+  "path-intellisense.extensionOnImport": true,
+  "path-intellisense.autoSlashAfterDirectory": true,
+  "highlight-matching-tag.highlightSelfClosing": true,
+  "highlight-matching-tag.style": {
+    "borderWidth": "0 0 1px 0",
+    "borderStyle": "dotted",
+    "borderColor": "white"
+  },
+  "highlight-matching-tag.leftStyle": null,
+  "highlight-matching-tag.rightStyle": null,
+  "editor.autoIndent": true,
+  "editor.minimap.showSlider": "always",
+  "gitProjectManager.baseProjectsFolders": ["~/Git/"],
+  "gitProjectManager.ignoredFolders": ["node_modules"],
+  "gitProjectManager.maxDepthRecursion": 1,
+  "gitProjectManager.searchInsideProjects": false
 }
