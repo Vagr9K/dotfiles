@@ -41,9 +41,6 @@
   "eslint.run": "onSave",
   "window.menuBarVisibility": "toggle",
   "editor.minimap.renderCharacters": false,
-  "ruby.lint": {
-    "rubocop": true
-  },
   "stylelint.enable": true,
   "css.validate": false,
   "scss.validate": false,
@@ -85,14 +82,6 @@
   "html.suggest.angular1": false,
   "path-intellisense.extensionOnImport": true,
   "path-intellisense.autoSlashAfterDirectory": true,
-  "highlight-matching-tag.highlightSelfClosing": true,
-  "highlight-matching-tag.style": {
-    "borderWidth": "0 0 1px 0",
-    "borderStyle": "dotted",
-    "borderColor": "white"
-  },
-  "highlight-matching-tag.leftStyle": null,
-  "highlight-matching-tag.rightStyle": null,
   "editor.autoIndent": true,
   "editor.minimap.showSlider": "always",
   "gitProjectManager.baseProjectsFolders": ["~/Git/"],

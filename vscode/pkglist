@@ -10,7 +10,6 @@ dbaeumer.vscode-eslint
 donjayamanne.githistory
 donjayamanne.python
 dsznajder.es7-react-js-snippets
-ecmel.vscode-html-css
 esbenp.prettier-vscode
 felipecaputo.git-project-manager
 formulahendry.auto-close-tag
@@ -22,4 +21,5 @@ ms-vscode.sublime-keybindings
 msjsdiag.debugger-for-chrome
 shinnn.stylelint
 vincaslt.highlight-matching-tag
+wix.vscode-import-cost
 zhuangtongfa.Material-theme
